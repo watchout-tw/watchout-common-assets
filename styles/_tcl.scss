@@ -1,0 +1,75 @@
+.tcl-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  max-width: $tcl-bp-sm;
+  margin: 0 auto;
+
+  > .tcl-panel {
+    position: relative;
+    width: 100%;
+    max-width: $tcl-bp-sm;
+    margin: 0;
+    @if $tcl-dev-mode == true {
+      border: 1px $color-very-light-grey solid;
+    }
+    &.with-padding {
+      padding: 1rem;
+    }
+    > .tcl-panel-nav-link {
+      position: absolute;
+      padding: 0.5rem 1rem;
+      &.top-left {
+        top: 0;
+        left: 0;
+      }
+    }
+    > .tcl-panel-heading {
+      margin-bottom: 0.5rem;
+      &.content-center {
+        text-align: center;
+      }
+    }
+    > .tcl-panel-title {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.25rem;
+      line-height: 1.5;
+      font-weight: bold;
+      color: $color-nice-grey;
+    }
+    > .tcl-panel-spacer {
+      margin-top: 2rem;
+    }
+  }
+}
+.with-margin {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+@include tcl-sm {
+  .tcl-container {
+    > .tcl-panel {
+      max-width: $tcl-panel-max-width;
+    }
+  }
+  .with-margin {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@include tcl-md {
+  .tcl-container {
+    max-width: $tcl-bp-lg;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    > .tcl-panel {
+      max-width: 46.511627906977%; // 320/688
+      // 688 = 16 + 320 + 16 + 320 + 16
+      margin: 0.5rem;
+    }
+  }
+}

@@ -1,0 +1,110 @@
+h1, h2, h3, h4, h5 {
+  line-height: 1.35;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  &.font-serif {
+    @include font-serif;
+    @include font-smoothing;
+  }
+  &.font-weight-normal {
+    font-weight: normal;
+  }
+}
+h1 {
+  font-size: 2.5rem;
+  &.large {
+    font-size: 3rem;
+  }
+}
+h2 {
+  font-size: 1.5rem;
+  &.large {
+    font-size: 2rem;
+  }
+}
+h3 {
+  font-size: 1.25rem;
+  &.large {
+    font-size: 1.5rem;
+  }
+  &.larger {
+    font-size: 2rem;
+  }
+}
+h4 {
+  font-size: 1rem;
+}
+h5 {
+  font-size: 0.875rem;
+}
+
+.paragraphs {
+  margin: 1rem 0;
+  &.first {
+    margin-top: 0;
+  }
+  &.last {
+    margin-bottom: 0;
+  }
+  &.no-margin {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  &.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &.default-width {
+    width: 18rem;
+    @include bp-md-up {
+      width: 24rem;
+    }
+  }
+
+  > p:last-child {
+    margin-bottom: 0;
+  }
+  > ul,
+  > ol {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+  }
+  > blockquote {
+    > p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.line-height-tight {
+  line-height: $line-height-tight;
+}
+.line-height-default {
+  line-height: $line-height-default;
+}
+.line-height-relaxed {
+  line-height: $line-height-relaxed;
+}
+
+.section-title-underline,
+.section-title-underline-small,
+.section-title-underline-tiny {
+  font-weight: bold;
+  > span {
+    display: inline-block;
+    border-bottom: 2px black solid;
+  }
+}
+.section-title-underline {
+  font-size: 1rem;
+  line-height: 1.125rem;
+}
+.section-title-underline-small {
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+}
+.section-title-underline-tiny {
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+}

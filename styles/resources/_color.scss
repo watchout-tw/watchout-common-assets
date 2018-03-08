@@ -1,0 +1,51 @@
+// Solid colors
+
+// Original colors
+
+$color-watchout: #50E3C2;
+$color-park: #FFB55D;
+$color-kangsim: $color-park;
+$color-lab: $color-watchout;
+$color-console: $color-watchout;
+$color-ask: #4DEBDF;
+$color-musou: #FF5368;
+$color-edu: #B7F661;
+
+// Light colors
+
+$color-park-light: #FFECD6;
+$color-lab-light: #D3F8EF;
+
+// Darker colors
+
+$color-watchout-darker: #47C9AD;
+$color-park-darker: #E6A353;
+$color-kangsim-darker: $color-park-darker;
+$color-lab-darker: $color-watchout-darker;
+$color-console-darker: $color-watchout-darker;
+$color-ask-darker: #45D1C5;
+$color-musou-darker: #E64C5E;
+$color-edu-darker: #A4DB56;
+
+// Shades of grey
+
+$color-very-very-light-grey: #f5f5f5;
+$color-very-light-grey: #e0e0e0;
+$color-generic-grey: #b9b9b9;
+$color-border-grey: #9b9b9b;
+$color-secondary-text-grey: #707070;
+$color-nice-grey: #4a4a4a;
+
+// Shades of soil
+
+$color-soil-light: #bd7260;
+$color-soil-dark: #8c4533;
+$color-soil-deep: #434343;
+
+// Transparent colors
+
+// Almost white transparent colors
+// FIXME: bad system
+$color-lab-almost-white: rgba($color-lab, 0.13);
+
+$color-avatar-background-white: rgba(white, 0.68);

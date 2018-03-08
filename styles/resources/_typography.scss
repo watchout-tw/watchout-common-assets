@@ -1,0 +1,33 @@
+$rem: 16px;
+$text-size-standard: 1rem;
+$text-size-small: 0.875rem;
+$font-sans-serif: 'SF', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; // -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+// -apple-system in macOS High Sierra & iOS 11 is weird
+$font-serif: "century-std", "noto-serif-patch", "source-han-serif-tc", serif;
+$font-monospace: monospace;
+
+@mixin font-monospace {
+  font-family: $font-monospace;
+}
+@mixin font-serif {
+  font-family: $font-serif;
+}
+
+// Line height
+
+$line-height-tight: 1.25;
+$line-height-default: 1.5;
+$line-height-relaxed: 1.75;
+
+// Styling
+
+@mixin underline($opacity) {
+  border-bottom: 2px rgba($color-watchout, $opacity) solid;
+}
+
+// Font smoothing
+
+@mixin font-smoothing() {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

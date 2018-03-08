@@ -1,0 +1,80 @@
+// Text color
+
+.text-color-park {
+  color: $color-park;
+}
+
+// Background color
+
+// Channel-specific background colors
+.bg-watchout {
+  background-color: $color-watchout;
+}
+.bg-watchout-ninetyfive {
+  background-color: rgba($color-watchout, 0.95);
+}
+.bg-park {
+  background-color: $color-park;
+}
+.bg-park-light {
+  background-color: rgba($color-park, 0.25);
+}
+.bg-park-light-opaque {
+  background-color: $color-park-light;
+}
+.bg-kangsim {
+  background-color: $color-kangsim;
+}
+.bg-kangsim-light {
+  background-color: rgba($color-kangsim, 0.25);
+}
+.bg-lab {
+  background-color: $color-lab;
+}
+.bg-lab-ninetyfive {
+  background-color: rgba($color-lab, 0.95);
+}
+.bg-lab-light {
+  background-color: rgba($color-lab, 0.25);
+}
+.bg-lab-light-opaque {
+  background-color: $color-lab-light;
+}
+.bg-console {
+  background-color: $color-console;
+}
+.bg-console-light {
+  background-color: rgba($color-console, 0.25);
+}
+.bg-ask {
+  background-color: $color-ask;
+}
+.bg-ask-ninetyfive {
+  background-color: rgba($color-ask, 0.95);
+}
+.bg-ask-light {
+  background-color: rgba($color-ask, 0.25);
+}
+.bg-ask-gradient-to-transparent {
+  background: linear-gradient(to bottom, rgba($color-ask, 0.25), rgba($color-ask, 0));
+}
+.bg-musou {
+  background-color: $color-musou;
+}
+.bg-musou-ninetyfive {
+  background-color: rgba($color-musou, 0.95);
+}
+.bg-musou-light {
+  background-color: rgba($color-musou, 0.25);
+}
+.bg-edu {
+  background-color: $color-edu;
+}
+.bg-edu-light {
+  background-color: rgba($color-edu, 0.25);
+}
+
+// Other background colors
+.bg-very-very-light-grey {
+  background-color: $color-very-very-light-grey
+}
