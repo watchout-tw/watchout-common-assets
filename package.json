@@ -5,5 +5,8 @@
   "repository": "github:watchout-tw/watchout-common-assets",
   "main": "index.js",
   "author": "Department of Technology at Watchout <dev@watchout.tw>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "4.0.0"
+  }
 }
