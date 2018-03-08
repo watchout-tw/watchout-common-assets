@@ -1,6 +1,6 @@
 {
   "name": "watchout-common-assets",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Common assets across Watchout Commons",
   "repository": "github:watchout-tw/watchout-common-assets",
   "main": "index.js",
