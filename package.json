@@ -2,9 +2,8 @@
   "name": "common-assets",
   "version": "0.0.1",
   "description": "Common assets across Watchout Commons",
+  "repository": "github:watchout-tw/watchout-common-assets",
   "main": "index.js",
-  "scripts": {
-  },
   "author": "Department of Technology at Watchout <dev@watchout.tw>",
   "license": "MIT"
 }
