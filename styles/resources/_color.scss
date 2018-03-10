@@ -11,6 +11,19 @@ $color-ask: #4DEBDF;
 $color-musou: #FF5368;
 $color-edu: #B7F661;
 
+// Original colors in a map
+
+$color: (
+  watchout: #50E3C2,
+  park: #FFB55D,
+  kangsim: $color-park,
+  lab: $color-watchout,
+  console: $color-watchout,
+  ask: #4DEBDF,
+  musou: #FF5368,
+  edu: #B7F661
+);
+
 // Light colors
 
 $color-park-light: #FFECD6;
