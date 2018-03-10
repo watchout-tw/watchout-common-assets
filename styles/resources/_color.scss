@@ -11,9 +11,9 @@ $color-ask: #4DEBDF;
 $color-musou: #FF5368;
 $color-edu: #B7F661;
 
-// Original colors in a map
+// Same thing but in a map
 
-$color: (
+$watchout-colors: (
   watchout: #50E3C2,
   park: #FFB55D,
   kangsim: $color-park,
@@ -53,7 +53,7 @@ $color-nice-grey: #4a4a4a;
 
 $color-soil-light: #bd7260;
 $color-soil-dark: #8c4533;
-$color-soil-deep: #434343;
+$color-bedrock: #3a3a3a;
 
 // Transparent colors
 

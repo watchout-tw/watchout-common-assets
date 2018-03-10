@@ -77,6 +77,16 @@ h5 {
   }
 }
 
+.font-size-smaller {
+  font-size: 0.875rem;
+}
+
+@each $channel, $color in $watchout-colors {
+  .text-color-#{$channel} {
+    color: $color;
+  }
+}
+
 .line-height-tight {
   line-height: $line-height-tight;
 }

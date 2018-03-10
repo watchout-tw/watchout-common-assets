@@ -25,7 +25,7 @@ export default {
   musou: new Channel('musou', '國會無雙', 'https://musou.tw/', true),
   'musou-media-experiment': new Channel('musou-media-experiment', '國會無雙媒體實驗', 'https://musou.watchout.tw/', true),
   ask: new Channel('ask', '給問擂台', 'https://ask.watchout.tw/'),
-  edu: new Channel('edu', '公民學院', 'https://edu.watchout.tw/'),
+  edu: new Channel('edu', '公民學院', 'https://citizenedu.tw/'),
   c0ngress: new Channel('c0ngress', '野生國會', 'https://c0ngress.watchout.tw/', true),
   watchout: new Channel('watchout', '沃草', 'https://watchout.tw/')
 }

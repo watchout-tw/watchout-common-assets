@@ -8,16 +8,15 @@
 
 // Channel-specific background colors
 // Generate bg-* bg-*-almost-opaque bg-*-light
-$channels: watchout park kangsim lab console ask musou edu;
 $opacity-levels: (almost-opaque: 0.95, light: 0.25);
 
-@each $channel in $channels {
+@each $channel, $color in $watchout-colors {
   @each $opacity-name, $opacity in $opacity-levels {
     .bg-#{$channel} {
-      background-color: map-get($color, $channel);
+      background-color: $color;
     }
     .bg-#{$channel}-#{nth($opacity-name, 1)} {
-      background-color: rgba(map-get($color, $channel), $opacity);
+      background-color: rgba($color, $opacity);
     }
   }
 }
