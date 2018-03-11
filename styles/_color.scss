@@ -8,8 +8,6 @@
 
 // Channel-specific background colors
 // Generate bg-* bg-*-almost-opaque bg-*-light
-$opacity-levels: (almost-opaque: 0.95, light: 0.25);
-
 @each $channel, $color in $watchout-colors {
   @each $opacity-name, $opacity in $opacity-levels {
     .bg-#{$channel} {

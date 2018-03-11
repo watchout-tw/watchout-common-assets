@@ -1,31 +1,3 @@
 .close {
-  float: none;
-  display: block;
-  position: absolute;
-  top: -0.25rem;
-  right: 0.25rem;
-  opacity: 0.5;
-  font-size: 2rem;
-  line-height: 1;
-  border-bottom-width: 4px;
-  font-weight: 200;
-  text-shadow: none;
-  cursor: pointer;
-
-  &:before {
-    content: '×';
-  }
-  &:hover, &:focus, &:active {
-    opacity: 1;
-  }
-
-  &.white {
-    &, &:hover, &:focus, &:active {
-      color: white;
-    }
-  }
-  &.small {
-    font-size: 1.5rem;
-    font-weight: 300;
-  }
+  @include close;
 }

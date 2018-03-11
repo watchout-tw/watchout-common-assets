@@ -26,8 +26,8 @@ $watchout-colors: (
 
 // Light colors
 
-$color-park-light: #FFECD6;
-$color-lab-light: #D3F8EF;
+$color-park-light-solid: #FFECD6;
+$color-lab-light-solid: #D3F8EF;
 
 // Darker colors
 
@@ -56,6 +56,9 @@ $color-soil-dark: #8c4533;
 $color-bedrock: #3a3a3a;
 
 // Transparent colors
+
+$opacity-levels: (almost-opaque: 0.95, light: 0.25);
+$color-park-light: rgba($color-park, map-get($opacity-levels, light));
 
 // Almost white transparent colors
 // FIXME: bad system

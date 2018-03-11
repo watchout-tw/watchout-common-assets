@@ -1,0 +1,46 @@
+@mixin close() {
+  float: none;
+  display: block;
+  position: absolute;
+  top: -0.25rem;
+  right: 0.25rem;
+  opacity: 0.5;
+  font-size: 2rem;
+  line-height: 1;
+  border-bottom-width: 4px;
+  font-weight: 200;
+  text-shadow: none;
+  cursor: pointer;
+
+  &:before {
+    content: '×';
+  }
+  &:hover, &:focus, &:active {
+    opacity: 1;
+  }
+
+  &.white {
+    &, &:hover, &:focus, &:active {
+      color: white;
+    }
+  }
+  &.small {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+}
+
+@mixin checkmark($size, $color) {
+  &:before {
+    content: '';
+    display: block;
+    width: $size;
+    height: $size*1.75;
+    border-bottom: $size*0.25 $color solid;
+    border-right: $size*0.25 $color solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -65%) rotate(45deg);
+  }
+}
