@@ -10,7 +10,7 @@ $color-console: $color-watchout;
 $color-ask: #4DEBDF;
 $color-musou: #FF5368;
 $color-edu: #B7F661;
-$color-maa: white;
+$color-maa: #4A4A4A; // TODO: not sure if this works
 $color-vendor: #F8E71C;
 
 // Same thing but in a map
@@ -24,7 +24,7 @@ $watchout-colors: (
   ask: #4DEBDF,
   musou: #FF5368,
   edu: #B7F661,
-  maa: white,
+  maa: #4A4A4A,
   vendor: #F8E71C
 );
 
@@ -62,7 +62,9 @@ $color-bedrock: #3a3a3a;
 // Transparent colors
 
 $opacity-levels: (almost-opaque: 0.95, light: 0.25);
+$color-watchout-light: rgba($color-watchout, map-get($opacity-levels, light));
 $color-park-light: rgba($color-park, map-get($opacity-levels, light));
+$color-maa-light: rgba($color-maa, map-get($opacity-levels, light));
 
 // Almost white transparent colors
 // FIXME: bad system
