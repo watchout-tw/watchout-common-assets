@@ -10,6 +10,8 @@ $color-console: $color-watchout;
 $color-ask: #4DEBDF;
 $color-musou: #FF5368;
 $color-edu: #B7F661;
+$color-maa: white;
+$color-vendor: #F8E71C;
 
 // Same thing but in a map
 
@@ -21,7 +23,9 @@ $watchout-colors: (
   console: $color-watchout,
   ask: #4DEBDF,
   musou: #FF5368,
-  edu: #B7F661
+  edu: #B7F661,
+  maa: white,
+  vendor: #F8E71C
 );
 
 // Light colors

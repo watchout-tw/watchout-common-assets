@@ -30,5 +30,7 @@ export default {
   ask: new Channel('ask', '給問擂台', 'https://ask.watchout.tw/'),
   edu: new Channel('edu', '公民學院', 'https://citizenedu.tw/'),
   c0ngress: new Channel('c0ngress', '野生國會', 'https://c0ngress.watchout.tw/'),
+  maa: new Channel('maa', '草漫', 'https://maa.watchout.tw/'),
+  vendor: new Channel('vendor', '草地攤販', 'https://vendor.watchout.tw/'),
   watchout: new Channel('watchout', '沃草', 'https://watchout.tw/')
 }

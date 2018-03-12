@@ -1,7 +1,7 @@
 html, body {
   font-family: $font-sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: $rem;
+  line-height: $line-height-default;
   box-sizing: border-box;
 }
 *, *:before, *:after {
@@ -20,4 +20,8 @@ label {
 }
 img {
   display: block;
+}
+ul {
+  padding: 0;
+  list-style: none;
 }
