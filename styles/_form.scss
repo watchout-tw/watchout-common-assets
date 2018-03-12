@@ -26,6 +26,23 @@
   }
 }
 
+form {
+  > .field {
+    margin: 0.25rem 0;
+    display: flex;
+    align-items: center;
+    > * {
+      flex-grow: 1;
+    }
+    &.with-button {
+      > .button {
+        flex-grow: 0;
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}
+
 input[type='text'],
 input[type='email'],
 input[type='password'] {
