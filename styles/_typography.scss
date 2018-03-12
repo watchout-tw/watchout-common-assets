@@ -85,10 +85,12 @@ h5 {
   }
 }
 
+// Font size
 .font-size-smaller {
   font-size: 0.875rem;
 }
 
+// Text color
 @each $channel, $color in $watchout-colors {
   .text-color-#{$channel} {
     color: $color;
@@ -106,6 +108,11 @@ h5 {
 }
 .line-height-relaxed {
   line-height: $line-height-relaxed;
+}
+
+// Text align
+.text-align-right {
+  text-align: right;
 }
 
 .section-title-underline,
