@@ -2,9 +2,9 @@
 
 $tcl-dev-mode: false;
 
-$gap: 16px;
+$tcl-gap: 16px;
 $tcl-panel-max-width: 464px;
-$tcl-bp-sm: $tcl-panel-max-width + 2 * $gap; // 496px
+$tcl-bp-sm: $tcl-panel-max-width + 2 * $tcl-gap; // 496px
 $tcl-bp-md: 688px;
 $tcl-bp-lg: 992px;
 

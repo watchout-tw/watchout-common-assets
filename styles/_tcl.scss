@@ -67,9 +67,15 @@
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     > .tcl-panel {
-      max-width: 46.511627906977%; // 320/688
+      max-width: 320 / 688 * 100%; // in case calc() is not supported
+      max-width: calc((100% - 48px) / 2);
       // 688 = 16 + 320 + 16 + 320 + 16
       margin: 0.5rem;
+      &.full-width {
+        max-width: none;
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
     }
   }
 }
