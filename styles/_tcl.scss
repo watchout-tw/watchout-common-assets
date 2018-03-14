@@ -69,8 +69,8 @@
     margin-bottom: 0.5rem;
     > .tcl-panel {
       max-width: 320 / 688 * 100%; // in case calc() is not supported
-      max-width: calc((100% - #{$tcl-gap * 3}) / 2);
       // 688 = 16 + 320 + 16 + 320 + 16
+      max-width: calc((100% - #{$tcl-gap * 3}) / 2);
       margin: 0.5rem;
       &.full-width {
         max-width: none;
