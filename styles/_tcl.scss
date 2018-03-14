@@ -16,6 +16,10 @@
     @if $tcl-dev-mode == true {
       border: 1px $color-very-light-grey solid;
     }
+    &.half-width {
+      max-width: calc((100% - #{$tcl-gap * 3}) / 2);
+      margin: 0.5rem;
+    }
     &.with-padding {
       padding: 1rem;
     }
@@ -29,9 +33,6 @@
     }
     > .tcl-panel-heading {
       margin-bottom: 0.5rem;
-      &.content-center {
-        text-align: center;
-      }
     }
     > .tcl-panel-title {
       margin-top: 0.5rem;
@@ -46,7 +47,7 @@
     }
   }
 }
-.with-margin {
+.left-right-margin {
   margin-left: 1rem;
   margin-right: 1rem;
 }
@@ -56,7 +57,7 @@
       max-width: $tcl-panel-max-width;
     }
   }
-  .with-margin {
+  .left-right-margin {
     margin-left: 0;
     margin-right: 0;
   }
@@ -68,13 +69,16 @@
     margin-bottom: 0.5rem;
     > .tcl-panel {
       max-width: 320 / 688 * 100%; // in case calc() is not supported
-      max-width: calc((100% - 48px) / 2);
+      max-width: calc((100% - #{$tcl-gap * 3}) / 2);
       // 688 = 16 + 320 + 16 + 320 + 16
       margin: 0.5rem;
       &.full-width {
         max-width: none;
         margin-left: 1rem;
         margin-right: 1rem;
+      }
+      &.half-width {
+        max-width: calc((100% - #{$tcl-gap * 5}) / 4);
       }
     }
   }
