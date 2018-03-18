@@ -23,3 +23,13 @@ $logo-size: 64px;
     @include full-coverage;
   }
 }
+
+@mixin center-self($max-width: $bp-sm-content-max-width) {
+  max-width: $max-width;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  @include bp-sm-up {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

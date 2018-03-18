@@ -5,7 +5,7 @@ a, a:hover, a:focus, a:active, a:visited {
   line-height: 1.2; // TODO: is this ok?
 }
 a.a-text,
-.a-text-only a {
+.a-text-parent a {
   display: inline;
   @include underline(0.5);
 

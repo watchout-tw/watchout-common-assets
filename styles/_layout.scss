@@ -1,0 +1,54 @@
+.center-self {
+  @include center-self;
+}
+.center-self-wide {
+  @include center-self(64rem);
+}
+.center-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.image-container {
+  display: block;
+  width: 100%;
+  > img,
+  > .image {
+    display: block;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+  &.full-width {
+    @include bp-sm-up {
+      padding-right: 1rem;
+      padding-left: 1rem;
+    }
+    > img,
+    > .image {
+      max-width: 96rem;
+    }
+  }
+  &.portrait {
+    > img,
+    > .image {
+      max-width: 30rem;
+    }
+  }
+  &.document {
+    > img,
+    > .image {
+      border: 1px $color-very-light-grey solid;
+      border-radius: 1px;
+    }
+  }
+  &.manga {
+    > img,
+    > .image {
+      border: 2px $color-nice-grey solid;
+      border-radius: 1px;
+    }
+  }
+}
