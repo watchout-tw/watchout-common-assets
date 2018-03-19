@@ -58,7 +58,7 @@ input[type='password'] {
   border: none;
   border-radius: 0;
   border-bottom: 2px $color-border-grey solid;
-  line-height: 1.75;
+  line-height: $line-height-relaxed;
   padding: 0;
   margin: 0;
   width: 8rem;
