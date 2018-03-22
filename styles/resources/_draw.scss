@@ -35,12 +35,25 @@
     content: '';
     display: block;
     width: $size;
-    height: $size*1.75;
-    border-bottom: $size*0.25 $color solid;
-    border-right: $size*0.25 $color solid;
+    height: $size * 1.75;
+    border-bottom: $size * 0.25 $color solid;
+    border-right: $size * 0.25 $color solid;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -65%) rotate(45deg);
+  }
+}
+
+@mixin triangleUp($size, $color) {
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    border-bottom: $size solid $color;
+    transform: scaleX(0.66666667);
   }
 }

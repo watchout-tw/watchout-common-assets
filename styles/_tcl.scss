@@ -67,6 +67,11 @@
     max-width: $tcl-bp-lg;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+    &.without-margin {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
     > .tcl-panel {
       max-width: 320 / 688 * 100%; // in case calc() is not supported
       // 688 = 16 + 320 + 16 + 320 + 16
