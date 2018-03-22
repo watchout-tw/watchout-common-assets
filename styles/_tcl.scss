@@ -23,6 +23,14 @@
     &.with-padding {
       padding: 1rem;
     }
+    &.with-top-bottom-margin {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+    &.with-left-right-margin {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
     > .tcl-panel-nav-link {
       position: absolute;
       padding: 0.5rem 1rem;
@@ -55,6 +63,10 @@
   .tcl-container {
     > .tcl-panel {
       max-width: $tcl-panel-max-width;
+    }
+    > .with-left-right-margin {
+      margin-left: 0;
+      margin-right: 0;
     }
   }
   .left-right-margin {
