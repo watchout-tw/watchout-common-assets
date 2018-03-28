@@ -12,7 +12,6 @@
     position: relative;
     width: 100%;
     max-width: $tcl-bp-sm;
-    margin: 0;
     @if $tcl-dev-mode == true {
       border: 1px $color-very-light-grey solid;
     }
@@ -26,10 +25,6 @@
     &.with-top-bottom-margin {
       margin-top: 0.5rem;
       margin-bottom: 0.5rem;
-    }
-    &.with-left-right-margin {
-      margin-left: 1rem;
-      margin-right: 1rem;
     }
     > .tcl-panel-nav-link {
       position: absolute;
@@ -55,7 +50,7 @@
     }
   }
 }
-.left-right-margin {
+.tcl-left-right-margin {
   margin-left: 1rem;
   margin-right: 1rem;
 }
@@ -64,12 +59,8 @@
     > .tcl-panel {
       max-width: $tcl-panel-max-width;
     }
-    > .with-left-right-margin {
-      margin-left: 0;
-      margin-right: 0;
-    }
   }
-  .left-right-margin {
+  .tcl-left-right-margin {
     margin-left: 0;
     margin-right: 0;
   }
