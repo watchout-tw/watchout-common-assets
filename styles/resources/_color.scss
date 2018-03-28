@@ -28,7 +28,7 @@ $watchout-colors: (
   vendor: #F8E71C
 );
 
-// Light colors
+// Light colors 25%
 
 $color-park-light-solid: #FFECD6;
 $color-lab-light-solid: #D3F8EF;
@@ -71,6 +71,8 @@ $color-maa-light: rgba($color-maa, map-get($opacity-levels, light));
 // Almost white transparent colors
 // FIXME: bad system
 $color-lab-almost-white: rgba($color-lab, 0.13);
+
+// Shares of transparent white
 
 $color-avatar-background-white: rgba(white, 0.68);
 $color-modal-overlay-white: rgba(white, 0.94);
