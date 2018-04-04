@@ -7,6 +7,7 @@ $tcl-panel-max-width: 464px;
 $tcl-bp-sm: $tcl-panel-max-width + 2 * $tcl-gap; // 496px
 $tcl-bp-md: 688px;
 $tcl-bp-lg: 992px;
+$tcl-panel-full-width: $tcl-bp-lg - 2 * $tcl-gap; // 960px
 
 @mixin tcl-sm {
   @media (min-width: #{$tcl-bp-sm}) {

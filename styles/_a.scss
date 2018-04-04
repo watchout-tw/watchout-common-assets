@@ -15,6 +15,7 @@ a.a-text,
 }
 a.a-block {
   display: block;
+  line-height: $line-height-default; // TODO: is this ok?
 }
 a.inline-block {
   display: inline-block;
