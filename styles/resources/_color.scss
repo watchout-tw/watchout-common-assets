@@ -54,6 +54,7 @@ $color-video-player-shadow-black: black;
 
 $color-very-very-light-grey: #f5f5f5;
 $color-very-light-grey: #e0e0e0;
+$color-disable-button-grey: #eaeaea;
 $color-generic-grey: #b9b9b9;
 $color-inactive-grey: #9b9b9b;
 $color-border-grey: #9b9b9b;
@@ -73,6 +74,7 @@ $color-watchout-light: rgba($color-watchout, map-get($opacity-levels, light));
 $color-park-light: rgba($color-park, map-get($opacity-levels, light));
 $color-ask-light: rgba($color-ask, map-get($opacity-levels, light));
 $color-maa-light: rgba($color-maa, map-get($opacity-levels, light));
+$color-musou-light: rgba($color-musou, map-get($opacity-levels, light));
 
 // Almost white transparent colors
 // FIXME: bad system

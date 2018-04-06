@@ -42,6 +42,10 @@
       background-color: $color;
     }
   }
+  &.disable {
+    background-color: $color-disable-button-grey;
+    color: $color-inactive-grey;
+  }
 }
 
 form,
