@@ -57,3 +57,134 @@
     transform: scaleX(0.66666667);
   }
 }
+
+@mixin spinner($size: 1.5rem, $color: white) {
+  @keyframes spin {
+    0% {
+      transform: rotate(0);
+      animation-timing-function: cubic-bezier(0.5, 0, 0.5, 0.2);
+    }
+    50% {
+      transform: rotate(180deg);
+      animation-timing-function: cubic-bezier(0.2, 0.5, 0.2, 1);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: $size;
+    height: $size;
+    margin-top: $size / -2;
+    margin-left: $size / -2;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 0.25rem;
+    border-color: $color $color $color transparent;
+    transform-origin: center;
+    animation: spin 1s infinite;
+  }
+}
+
+@mixin checkmark-animated($size: 1rem, $stroke-width: 0.25rem, $color: white, $animation-duration: 0.5s) {
+  @keyframes checkmark-draw-1 {
+    0% { transform: scaleY(0); }
+    28% { transform: scaleY(1); }
+  }
+  @keyframes checkmark-draw-2 {
+    0% { transform: scaleX(0); }
+    25% { transform: scaleX(0); }
+    100% { transform: scaleX(1); }
+  }
+
+  position: relative;
+  margin-top: 0.125rem;
+  margin-left: 1.25rem;
+  transform-origin: 0 100%;
+  transform: rotate(-45deg);
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    background: $color;
+    border-radius: 2px;
+  }
+  &:before {
+    width: $stroke-width;
+    height: $size;
+    transform-origin: 100% 0;
+    animation: checkmark-draw-1 $animation-duration;
+  }
+  &:after {
+    width: $size * 1.75;
+    height: $stroke-width;
+    margin-top: -$stroke-width;
+    transform-origin: 0 0;
+    animation: checkmark-draw-2 $animation-duration;
+  }
+}
+
+@mixin cross-animated($size: 2rem, $stroke-width: 0.25rem, $color: white, $animation-duration: 0.25s) {
+  $sqrt-2: 1.41421;
+  $stroke-1-transform: translateY($stroke-width) rotate(-45deg);
+  $stroke-2-transform: translateY($stroke-width) translateX(($size - $stroke-width / 2) / $sqrt-2) rotate(45deg);
+
+  @keyframes cross-draw-1 {
+    0% {
+      transform:  $stroke-1-transform scaleY(0);
+    }
+    50% {
+      transform:  $stroke-1-transform scaleY(1);
+    }
+    100% {
+      transform:  $stroke-1-transform scaleY(1);
+    }
+  }
+
+  @keyframes cross-draw-2 {
+    0% {
+      transform: $stroke-2-transform scaleY(0);
+    }
+    50% {
+      transform: $stroke-2-transform scaleY(0);
+    }
+    100% {
+      transform: $stroke-2-transform scaleY(1);
+    }
+  }
+
+  $box-size: 1rem;
+  position: relative;
+  margin-top: -0.125rem;
+  width: $box-size;
+  height: $box-size;
+
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    background: $color;
+    border-radius: 2px;
+    width: $stroke-width;
+    height: $size;
+    position: absolute;
+    top: -$box-size / 4;
+    left: -$box-size / 4;
+  }
+  &:before {
+    transform-origin: 0 0;
+    transform: $stroke-1-transform;
+    animation: cross-draw-1 $animation-duration;
+  }
+  &:after {
+    transform-origin: 100% 0;
+    transform: $stroke-2-transform;
+    animation: cross-draw-2 $animation-duration;
+  }
+}
