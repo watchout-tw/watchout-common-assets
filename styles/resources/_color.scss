@@ -57,6 +57,7 @@ $color-very-light-grey: #e0e0e0;
 $color-disable-button-grey: #eaeaea;
 $color-generic-grey: #b9b9b9;
 $color-inactive-grey: #9b9b9b;
+$color-light-border-grey: #ccc;
 $color-border-grey: #9b9b9b;
 $color-secondary-text-grey: #707070;
 $color-nice-grey: #4a4a4a;
@@ -69,12 +70,16 @@ $color-bedrock: #3a3a3a;
 
 // Transparent colors
 
-$opacity-levels: (almost-opaque: 0.95, light: 0.25);
+$opacity-levels: (almost-opaque: 0.95, light: 0.25, very-light: 0.12);
 $color-watchout-light: rgba($color-watchout, map-get($opacity-levels, light));
 $color-park-light: rgba($color-park, map-get($opacity-levels, light));
 $color-ask-light: rgba($color-ask, map-get($opacity-levels, light));
 $color-maa-light: rgba($color-maa, map-get($opacity-levels, light));
 $color-musou-light: rgba($color-musou, map-get($opacity-levels, light));
+
+$color-watchout-very-light: rgba($color-watchout, map-get($opacity-levels, very-light));
+$color-park-very-light: rgba($color-park, map-get($opacity-levels, very-light));
+$color-ask-very-light: rgba($color-ask, map-get($opacity-levels, very-light));
 
 // Almost white transparent colors
 // FIXME: bad system
