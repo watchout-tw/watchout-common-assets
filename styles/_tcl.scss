@@ -48,6 +48,11 @@
       font-weight: bold;
       color: $color-nice-grey;
     }
+    > .tcl-panel-content {
+      &.with-padding {
+        padding: 1rem;
+      }
+    }
   }
 }
 .tcl-left-right-margin {
