@@ -126,7 +126,7 @@ input[type='checkbox'] {
   }
 }
 
-.form-field-check-label {
+.form-input-check-label {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -140,13 +140,20 @@ input[type='checkbox'] {
     margin-left: 0.375rem;
   }
 }
+
 .form-field-many-inputs {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   margin: 0;
   > .input {
+    flex-grow: 1;
+    flex-shrink: 0;
     margin: 0.375rem;
+  }
+  > .form-input-check-label,
+  > .button {
+    flex-grow: 0;
   }
 }
 .form-field-align-center {
