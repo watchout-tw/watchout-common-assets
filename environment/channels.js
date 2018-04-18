@@ -1,11 +1,12 @@
 class Channel {
   constructor(id, name, home) {
+    let colorID = id === 'musou-media-experiment' ? 'musou' : id
     this.id = id
     this.name = name
     this.classes = {
       backgroundColor: {
-        opaque: 'bg-' + id,
-        light: 'bg-' + id + '-light'
+        opaque: 'bg-' + colorID,
+        light: 'bg-' + colorID + '-light'
       }
     }
     this.links = {
@@ -13,7 +14,7 @@ class Channel {
     }
     this.switcher = {
       show: true,
-      dark: ['musou', 'bunko', 'maa'].includes(id),
+      dark: ['musou', 'musou-media-experiment', 'bunko', 'maa'].includes(id),
       iconOnly: id === 'watchout'
     }
   }
