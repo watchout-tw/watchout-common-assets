@@ -51,6 +51,10 @@
     background-color: $color-disable-button-grey;
     color: $color-inactive-grey;
   }
+  &.immutable {
+    box-shadow: none;
+    cursor: default;
+  }
 }
 
 form,
@@ -157,6 +161,7 @@ input[type='checkbox'] {
   }
 }
 .form-field-align-center {
+  display: flex;
   justify-content: center;
 }
 
