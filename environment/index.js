@@ -21,7 +21,11 @@ const announcements = {
     {
       type: 'breaking',
       channel: 'system',
-      content: '你知道今年11月24日將有什麼大事發生嗎？四年一度的各地縣市長PK，激戰即將展開！到底誰能勝出？請密切關注：沃草2018《六都市長給問嗎》！'
+      content: '你知道今年11月24日將有什麼大事發生嗎？四年一度的各地縣市長PK，激戰即將展開。到底誰能勝出？請密切關注：沃草2018《六都市長給問嗎》',
+      action: {
+        label: '點我前往',
+        link: 'https://ask.watchout.tw/'
+      }
     }
     /*
     {
