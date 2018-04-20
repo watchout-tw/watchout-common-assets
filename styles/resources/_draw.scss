@@ -58,6 +58,19 @@
   }
 }
 
+@mixin triangleDown($size, $color) {
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: $size solid transparent;
+    border-right: $size solid transparent;
+    border-top: $size solid $color;
+    transform: scaleX(0.66666667);
+  }
+}
+
 @mixin spinner($size: 1.5rem, $color: white) {
   @keyframes spin {
     0% {

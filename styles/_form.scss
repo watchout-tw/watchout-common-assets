@@ -165,7 +165,7 @@ input[type='checkbox'] {
   justify-content: center;
 }
 
-.collapse-expand {
+.collapse {
   display: inline-block;
   padding: 0.5rem;
   font-size: 0.75rem;
@@ -173,9 +173,19 @@ input[type='checkbox'] {
   color: $color-nice-grey;
   cursor: pointer;
 
-  @include triangleUp(12px, $color-nice-grey);
-  > * {
-    display: inline-block;
-    vertical-align: top;
+  &.expand {
+    @include triangleUp(12px, $color-nice-grey);
+    > * {
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+
+  &.shrink {
+    @include triangleDown(12px, $color-nice-grey);
+    > * {
+      display: inline-block;
+      vertical-align: top;
+    }
   }
 }
