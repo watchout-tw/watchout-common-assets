@@ -21,8 +21,9 @@ const announcements = {
     {
       type: 'breaking',
       channel: 'system',
-      content: '今日下午5:87在火星東經123度、北緯23.5度發生規模4.2級的地震。'
-    },
+      content: '你知道今年11月24日將有什麼大事發生嗎？四年一度的各地縣市長PK，激戰即將展開！到底誰能勝出？請密切關注：沃草2018《六都市長給問嗎》！'
+    }
+    /*
     {
       type: 'livestream',
       channel: 'ask',
@@ -32,6 +33,7 @@ const announcements = {
         link: 'https://waa.tw/g90Jdf'
       }
     }
+    */
   ]
 }
 
