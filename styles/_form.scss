@@ -75,6 +75,9 @@ form,
         margin-left: 0.5rem;
       }
     }
+    &.with-extra-margin {
+      margin: 0.5rem 0
+    }
   }
 }
 
@@ -134,7 +137,7 @@ input[type='checkbox'] {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 0.5rem 0;
+  margin: 0.25rem 0;
   cursor: pointer;
   > input[type='checkbox'] {
     margin-left: 0;

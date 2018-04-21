@@ -85,7 +85,9 @@
       transform: rotate(360deg);
     }
   }
-
+  position: relative;
+  width: $size;
+  height: $size;
   &:before {
     content: '';
     display: block;
@@ -174,7 +176,8 @@
 
   $box-size: 1rem;
   position: relative;
-  margin-top: -0.125rem;
+  margin-top: -0.25rem;
+  margin-left: -0.25rem;
   width: $box-size;
   height: $box-size;
 
