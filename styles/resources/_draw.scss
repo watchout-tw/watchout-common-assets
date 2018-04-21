@@ -45,7 +45,7 @@
   }
 }
 
-@mixin triangleUp($size, $color) {
+@mixin triangleUp($size: 12px, $color: $color-nice-grey) {
   &:before {
     content: '';
     display: inline-block;
@@ -58,7 +58,7 @@
   }
 }
 
-@mixin triangleDown($size, $color) {
+@mixin triangleDown($size: 12px, $color: $color-nice-grey) {
   &:before {
     content: '';
     display: inline-block;
