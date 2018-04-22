@@ -66,6 +66,7 @@
 form,
 .form {
   > .field {
+    position: relative;
     width: 100%;
     margin: 0.25rem 0;
     display: flex;
@@ -84,6 +85,16 @@ form,
     }
     &.with-extra-margin {
       margin: 0.5rem 0
+    }
+    &.with-label {
+      padding-top: 1.25rem;
+      > .field-label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 0.875rem;
+        color: $color-secondary-text-grey;
+      }
     }
   }
 }
