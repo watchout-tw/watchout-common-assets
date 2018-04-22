@@ -180,6 +180,10 @@ h5 {
   font-weight: bold;
   line-height: 1.125rem;
 
+  &.with-increased-top-margin {
+    margin-top: 1rem;
+  }
+
   &.with-underline {
     > span {
       display: inline-block;
