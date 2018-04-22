@@ -105,8 +105,9 @@ h5 {
   }
 }
 
-.number-within-chinese {
-  padding: 0.25em;
+.number-within-chinese, // FIXME: to be deprecated
+.latin-within-han {
+  padding: 0 1px;
 }
 
 // Font size
@@ -148,6 +149,7 @@ h5 {
   text-align: right;
 }
 
+// FIXME: to be deprecated
 .section-title-underline,
 .section-title-underline-small,
 .section-title-underline-tiny {
@@ -168,4 +170,30 @@ h5 {
 .section-title-underline-tiny {
   font-size: 0.75rem;
   line-height: 0.875rem;
+}
+
+.section-title {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.125rem;
+
+  &.with-underline {
+    > span {
+      display: inline-block;
+      border-bottom: 2px black solid;
+    }
+    &.small {
+      font-size: 0.875rem;
+      line-height: 1.125rem;
+    }
+    &.tiny {
+      font-size: 0.75rem;
+      line-height: 0.875rem;
+    }
+  }
+}
+
+ul.bulleted-list {
+  list-style: disc;
+  padding-left: 1.5em;
 }
