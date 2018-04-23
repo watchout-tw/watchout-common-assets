@@ -11,7 +11,7 @@ const links = {
       direct: 'https://watchout.backme.tw/checkout/332/2686'
     },
     ask: {
-      direct: 'https://watchout.backme.tw/checkout/332/2686'
+      direct: 'https://watchout.backme.tw/checkout/332/2688'
     }
   },
   contact: rootURL + 'contact'
