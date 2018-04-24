@@ -11,12 +11,12 @@
   > .tcl-panel {
     position: relative;
     width: 100%;
-    max-width: $tcl-bp-sm;
+    flex-basis: $tcl-bp-sm;
     @if $tcl-dev-mode == true {
       border: 1px $color-very-light-grey solid;
     }
     &.half-width {
-      max-width: calc((100% - #{$tcl-gap * 3}) / 2);
+      flex-basis: calc((100% - #{$tcl-gap * 3}) / 2);
       margin: 0.5rem;
     }
     &.with-padding {
@@ -62,7 +62,7 @@
 @include tcl-sm {
   .tcl-container {
     > .tcl-panel {
-      max-width: $tcl-panel-max-width;
+      flex-basis: $tcl-panel-max-width;
     }
   }
   .tcl-left-right-margin {
@@ -81,17 +81,15 @@
     }
 
     > .tcl-panel {
-      max-width: 320 / 688 * 100%; // in case calc() is not supported
-      // 688 = 16 + 320 + 16 + 320 + 16
-      max-width: calc((100% - #{$tcl-gap * 3}) / 2);
+      flex-basis: calc((100% - #{$tcl-gap * 3}) / 2);
       margin: 0.5rem;
       &.full-width {
-        max-width: none;
+        flex-basis: 100%;
         margin-left: 1rem;
         margin-right: 1rem;
       }
       &.half-width {
-        max-width: calc((100% - #{$tcl-gap * 5}) / 4);
+        flex-basis: calc((100% - #{$tcl-gap * 5}) / 4);
       }
     }
   }
