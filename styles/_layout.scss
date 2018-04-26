@@ -1,9 +1,5 @@
 .center-self {
   @include center-self;
-  &.width-left-right-padding {
-    padding-right: 1rem;
-    padding-left: 1rem;
-  }
 }
 .center-self-wide {
   @include center-self(64rem);

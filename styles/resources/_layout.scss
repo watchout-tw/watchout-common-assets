@@ -26,10 +26,14 @@ $logo-size: 64px;
 
 @mixin center-self($max-width: $bp-sm-content-max-width) {
   max-width: $max-width;
-  margin-right: 1rem;
-  margin-left: 1rem;
-  @include bp-sm-up {
-    margin-right: auto;
-    margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
+  &.with-left-right-margin {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    @include bp-sm-up {
+      margin-right: auto;
+      margin-left: auto;
+    }
   }
 }
