@@ -1,5 +1,9 @@
 .center-self {
   @include center-self;
+  &.width-left-right-padding {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
 }
 .center-self-wide {
   @include center-self(64rem);
@@ -22,10 +26,6 @@
     margin: 0 auto;
   }
   &.full-width {
-    @include bp-sm-up {
-      padding-right: 1rem;
-      padding-left: 1rem;
-    }
     > img,
     > .image {
       max-width: 96rem;
