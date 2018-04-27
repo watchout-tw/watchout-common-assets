@@ -30,8 +30,9 @@ $watchout-colors: (
 
 // Light colors 25%
 
+$color-watchout-light-solid: #D3F8EF;
 $color-park-light-solid: #FFECD6;
-$color-lab-light-solid: #D3F8EF;
+$color-lab-light-solid: $color-watchout-light-solid;
 
 // Darker colors
 
