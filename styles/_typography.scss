@@ -17,7 +17,10 @@ h1 {
     font-size: 1.5rem;
   }
   &.medium {
-    font-size: 1.875rem;
+    font-size: 1.75rem;
+    @include bp-sm-up {
+      font-size: 1.875rem;
+    }
   }
   &.large {
     font-size: 3rem;
