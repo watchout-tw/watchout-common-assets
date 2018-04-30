@@ -11,6 +11,7 @@ html, body {
   margin: 0;
 }
 button, input, optgroup, select, textarea {
+  border: none;
   font-family: $font-sans-serif;
   &:focus {
     outline: none;
