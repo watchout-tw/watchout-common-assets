@@ -1,4 +1,5 @@
 @mixin appearance-button() {
+  position: relative;
   appearance: none;
   border: none;
   padding: 0.75rem;
@@ -60,6 +61,17 @@
   &.immutable {
     box-shadow: none;
     cursor: default;
+  }
+  &.cuboid {
+    box-shadow: none;
+    &.default {
+      background-color: $color-cuboid-default-light;
+      @include cuboid(4px, $color-cuboid-default-darker, $color-cuboid-default, true);
+    }
+    &.musou {
+      background-color: $color-cuboid-musou-light;
+      @include cuboid(4px, $color-cuboid-musou-darker, $color-cuboid-musou, true);
+    }
   }
 }
 

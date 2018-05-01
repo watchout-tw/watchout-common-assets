@@ -92,7 +92,15 @@ $color-avatar-background-white: rgba(white, 0.68);
 $color-modal-overlay-white: rgba(white, 0.94);
 $color-push-button-text-white: white;
 
-// Other colors
+// Color tuples for cuboids
+
+$color-cuboid-default-light: #eee;
+$color-cuboid-default: #ddd;
+$color-cuboid-default-darker: #aaa;
+
+$color-cuboid-musou-light: #ff6a7c;
+$color-cuboid-musou: $color-musou;
+$color-cuboid-musou-darker: $color-musou-darker;
 
 $color-twitter-light: #1dcaff;
 $color-twitter: #00aced;
@@ -100,3 +108,6 @@ $color-twitter-darker: #0084b4;
 $color-facebook-light: #386fe2;
 $color-facebook: #3b5998;
 $color-facebook-darker: #294684;
+$color-line-light: #10de10;
+$color-line: #00c300;
+$color-line-darker: #009800;

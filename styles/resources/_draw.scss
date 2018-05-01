@@ -71,6 +71,48 @@
   }
 }
 
+@mixin cuboid($depth, $color-bottom, $color-side, $pushable: false) {
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+  }
+  // bottom
+  &:before {
+    top: 100%;
+    left: $depth / 2;
+    width: 100%;
+    height: $depth;
+    background: $color-bottom;
+    transform: skewX(45deg);
+  }
+  // side
+  &:after {
+    top: $depth / 2;
+    left: 100%;
+    width: $depth;
+    height: 100%;
+    background: $color-side;
+    transform: skewY(45deg);
+  }
+
+  @if $pushable == true {
+    $remainder: 2px;
+    &:active {
+      &:before {
+        left: $remainder / 2;
+        height: $remainder;
+      }
+      &:after {
+        top: $remainder / 2;
+        width: $remainder;
+      }
+      transform: translate($depth - $remainder, $depth - $remainder);
+    }
+  }
+}
+
 @mixin spinner($size: 1.5rem, $color: white) {
   @keyframes spin {
     0% {
