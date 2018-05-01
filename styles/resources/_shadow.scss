@@ -1,13 +1,21 @@
+$color-shadow-minimum: rgba(black, 0.1);
 $color-shadow: rgba(black, 0.25);
+$color-shadow-darker: rgba(black, 0.5);
 
 @mixin shadow {
   box-shadow: 0 2px 8px 0 $color-shadow;
 }
+@mixin shadow-darker {
+  box-shadow: 0 2px 8px 0 $color-shadow-darker;
+}
 @mixin shadow-lifted {
   box-shadow: 0 4px 16px 0 $color-shadow;
 }
+@mixin shadow-lifted-darker {
+  box-shadow: 0 4px 16px 0 $color-shadow-darker;
+}
 @mixin shadow-minimum {
-  box-shadow: 0 1px 4px 0 rgba(black, 0.1);
+  box-shadow: 0 1px 4px 0 $color-shadow-minimum;
 }
 @mixin shadow-expanded {
   box-shadow: 0 8px 48px 0 $color-shadow;
