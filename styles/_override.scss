@@ -23,6 +23,9 @@ label {
 }
 img {
   display: block;
+  &.inline {
+    display: inline;
+  }
 }
 ul {
   padding: 0;
