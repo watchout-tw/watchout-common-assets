@@ -1,0 +1,15 @@
+@mixin appearance-button() {
+  position: relative;
+  appearance: none;
+  border: none;
+  padding: 0.75rem;
+  @include shadow;
+  background-color: $color-very-very-light-grey;
+  font-size: 1rem;
+  line-height: 1;
+  height: 2.5rem;
+
+  &:hover {
+    line-height: 1;
+  }
+}
