@@ -38,14 +38,11 @@
       background-color: $color;
     }
   }
-  &.disable {
-    background-color: $color-disable-button-grey;
-    color: $color-inactive-grey;
-  }
   &.immutable {
     box-shadow: none;
     cursor: default;
   }
+  // FIXME: should this be .button.cuboid OR .button-cuboid?
   &.cuboid {
     box-shadow: none;
     &.default {
@@ -56,6 +53,23 @@
       background-color: $color-cuboid-musou-light;
       @include cuboid(4px, $color-cuboid-musou-darker, $color-cuboid-musou, true);
     }
+  }
+  // FIXME: .button.simple.round OR .button-simple-round?
+  &.simple.round {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+  }
+  &.like.active {
+    background-color: $color-like;
+  }
+  &.dislike.active {
+    background-color: $color-dislike;
+  }
+  &.disable, // FIXME: to be deprecated
+  &.disabled {
+    background-color: $color-disable-button-grey;
+    color: $color-inactive-grey;
   }
 }
 
@@ -75,7 +89,7 @@ form,
     }
     &.with-button {
       > .button {
-        flex-basis: 4rem;
+        flex-basis: 3.25rem;
         margin-left: 0.5rem;
       }
     }
