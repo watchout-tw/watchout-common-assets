@@ -68,8 +68,11 @@
   }
   &.disable, // FIXME: to be deprecated
   &.disabled {
+    box-shadow: none;
     background-color: $color-disable-button-grey;
     color: $color-inactive-grey;
+    filter: grayscale(1);
+    cursor: default;
   }
 }
 
