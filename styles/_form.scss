@@ -192,7 +192,11 @@ input[type='checkbox'] {
   > .button {
     flex-grow: 0;
   }
-
+  &.tight {
+    > .input {
+      margin: 0.25rem;
+    }
+  }
   &.no-wrap {
     flex-wrap: nowrap;
     > .input:first-of-type {
@@ -206,6 +210,10 @@ input[type='checkbox'] {
 .form-field-align-center {
   display: flex;
   justify-content: center;
+}
+.form-field-align-right {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .collapse {
