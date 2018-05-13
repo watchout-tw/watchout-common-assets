@@ -42,7 +42,8 @@
   &.musou {
     color: white;
   }
-  
+
+  &[disabled],
   &.immutable {
     box-shadow: none;
     cursor: default;
@@ -167,6 +168,11 @@ input[type='checkbox'] {
       background-color: $color-ask;
     }
   }
+  &[disabled],
+  &.immutable {
+    box-shadow: none;
+    cursor: default;
+  }
 }
 
 .form-input-check-label {
@@ -175,6 +181,9 @@ input[type='checkbox'] {
   align-items: center;
   margin: 0.25rem 0;
   cursor: pointer;
+  &.immutable {
+    cursor: default;
+  }
   > input[type='checkbox'] {
     margin-left: 0;
     margin-right: 0;
