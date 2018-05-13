@@ -38,6 +38,11 @@
       background-color: $color;
     }
   }
+  // text color on specific background color
+  &.musou {
+    color: white;
+  }
+  
   &.immutable {
     box-shadow: none;
     cursor: default;
@@ -199,10 +204,10 @@ input[type='checkbox'] {
   }
   &.no-wrap {
     flex-wrap: nowrap;
-    > .input:first-of-type {
+    > .input:first-child {
       margin-left: 0;
     }
-    > .input:last-of-type {
+    > .input:last-child {
       margin-right: 0;
     }
   }
