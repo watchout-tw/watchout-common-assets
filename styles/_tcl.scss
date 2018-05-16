@@ -87,8 +87,17 @@
     > .tcl-panel {
       flex-basis: calc((100% - #{$tcl-gap * 3}) / 2);
       margin: 0.5rem;
+      &.without-margin {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
       &.full-width {
         flex-basis: 100%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+      &.three-quarters-width {
+        flex-basis: calc((100% - #{$tcl-gap * 5}) / 4 * 3 + #{$tcl-gap * 2});
         margin-left: 1rem;
         margin-right: 1rem;
       }
