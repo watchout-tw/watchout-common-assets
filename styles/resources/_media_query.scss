@@ -78,6 +78,13 @@ $bp-xl: 1200px;
   }
 }
 
+// Vertical breakpoints
+@mixin vbp-md-up {
+  @media (min-height: #{$bp-md}) {
+    @content;
+  }
+}
+
 // More than OR equal to aspect ratio
 @mixin aspect-ratio-wide {
   @media (min-aspect-ratio: 16/10) {
