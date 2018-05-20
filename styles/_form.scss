@@ -80,6 +80,10 @@
     filter: grayscale(1);
     cursor: default;
   }
+
+  &.shadow-reduced {
+    @include shadow-reduced
+  }
 }
 
 form,
