@@ -113,3 +113,9 @@ $color-line-darker: #009800;
 
 $color-like: $color-watchout;
 $color-dislike: $color-musou;
+
+$color-review-terrible: $color-musou;
+$color-review-bad: rgba($color-musou, 0.5);
+$color-review-okay: rgba($color-watchout, 0.3);
+$color-review-good: rgba($color-watchout, 0.65);
+$color-review-great: $color-watchout;

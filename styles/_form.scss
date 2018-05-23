@@ -65,12 +65,31 @@
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 50%;
+    padding: 0.25rem;
   }
   &.like.active {
     background-color: $color-like;
   }
   &.dislike.active {
     background-color: $color-dislike;
+  }
+  &.review {
+    color: white;
+    &.terrible.active {
+      background-color: $color-review-terrible;
+    }
+    &.bad.active {
+      background-color: $color-review-bad;
+    }
+    &.okay.active {
+      background-color: $color-review-okay;
+    }
+    &.good.active {
+      background-color: $color-review-good;
+    }
+    &.great.active {
+      background-color: $color-review-great;
+    }
   }
   &.disable, // FIXME: to be deprecated
   &.disabled {
