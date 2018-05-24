@@ -125,8 +125,12 @@ h5 {
 }
 
 // Font size
-.font-size-smaller {
+.font-size-smaller, // deprecated
+.font-size-small {
   font-size: 0.875rem;
+}
+.font-size-tiny {
+  font-size: 0.75rem;
 }
 
 // Text color
