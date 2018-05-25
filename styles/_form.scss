@@ -106,42 +106,6 @@
   }
 }
 
-form,
-.form {
-  > .field {
-    position: relative;
-    width: 100%;
-    margin: 0.25rem 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    > .input,
-    > .submit-button {
-      flex-grow: 1;
-      flex-basis: 0;
-    }
-    &.with-button {
-      > .button {
-        flex-basis: 3.25rem;
-        margin-left: 0.5rem;
-      }
-    }
-    &.with-extra-margin {
-      margin: 0.5rem 0
-    }
-    &.with-label {
-      padding-top: 1.25rem;
-      > .field-label {
-        position: absolute;
-        top: 0;
-        left: 0;
-        font-size: 0.875rem;
-        color: $color-secondary-text-grey;
-      }
-    }
-  }
-}
-
 input[type='text'],
 input[type='email'],
 input[type='password'] {
@@ -217,17 +181,59 @@ input[type='checkbox'] {
   }
 }
 
+.form-field {
+  @include form-field;
+  margin: 0.25rem 0;
+  &.with-double-top-margin {
+    margin-top: 0.5rem;
+  }
+  > .input {
+    flex-grow: 1;
+  }
+}
+.form-field-with-label {
+  @include form-field;
+  margin: 0.25rem 0;
+  padding-top: 1.25rem;
+  > .field-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 0.875rem;
+    color: $color-secondary-text-grey;
+  }
+  > .input {
+    flex-grow: 1;
+  }
+}
+.form-field-buttons {
+  @include form-field;
+  margin: 0.25rem 0;
+  > .button {
+    margin: 0.375rem;
+    flex-grow: 1;
+  }
+  &.no-wrap {
+    flex-wrap: nowrap;
+    > .button:first-child {
+      margin-left: 0;
+    }
+    > .button:last-child {
+      margin-right: 0;
+    }
+  }
+}
 .form-field-many-inputs {
-  display: flex;
+  @include form-field;
   flex-wrap: wrap;
-  align-items: center;
-  margin: 0;
   > .input {
     flex-grow: 1;
     margin: 0.375rem;
   }
   > .form-input-check-label,
   > .button {
+    width: auto;
+    flex-basis: auto;
     flex-grow: 0;
   }
   &.tight {
@@ -243,6 +249,18 @@ input[type='checkbox'] {
     > .input:last-child {
       margin-right: 0;
     }
+  }
+}
+.form-field-input-with-buttons {
+  @include form-field;
+  flex-wrap: nowrap;
+  > .input {
+    flex-basis: 100%;
+    margin-right: 0.375rem;
+  }
+  > .buttons {
+    display: flex;
+    flex-wrap: nowrap;
   }
 }
 .form-field-align-center {
