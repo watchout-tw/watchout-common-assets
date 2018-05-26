@@ -2,6 +2,9 @@
   .margin-top-#{$unit} {
     margin-top: $length;
   }
+  .margin-bottom-#{$unit} {
+    margin-bottom: $length;
+  }
   .margin-top-bottom-#{$unit} {
     margin-top: $length;
     margin-bottom: $length;
