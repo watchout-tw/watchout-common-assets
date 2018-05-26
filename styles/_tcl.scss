@@ -6,7 +6,8 @@
   justify-content: center;
   width: 100%;
   max-width: $tcl-bp-sm;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 
   > .tcl-panel {
     position: relative;
