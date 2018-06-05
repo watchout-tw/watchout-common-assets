@@ -68,6 +68,12 @@ h5 {
   &.last {
     margin-bottom: 0;
   }
+  &.margin-8 {
+    margin: 0.5rem 0;
+  }
+  &.margin-4 {
+    margin: 0.25rem 0;
+  }
   &.no-margin {
     margin-top: 0;
     margin-bottom: 0;
