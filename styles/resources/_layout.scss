@@ -9,6 +9,16 @@ $nav-height: $logo-size;
   left: 0;
 }
 
+@mixin full-width-container($max-width) {
+  max-width: $max-width;
+  margin-left: auto;
+  margin-right: auto;
+  @include bp-md-down {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 @mixin rect($ratio) {
   position: relative;
   display: block;
