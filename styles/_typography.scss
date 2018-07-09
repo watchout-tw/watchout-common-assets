@@ -231,3 +231,8 @@ ul.bulleted-list {
 .not-available {
   color: $color-secondary-text-grey;
 }
+
+.highlighted {
+  background-color: rgba($color-vendor, 0.5);
+  padding: 2px 0;
+}
