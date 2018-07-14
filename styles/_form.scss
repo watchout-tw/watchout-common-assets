@@ -53,15 +53,15 @@
     box-shadow: none;
     &.default {
       background-color: $color-cuboid-default-light;
-      @include cuboid(4px, $color-cuboid-default-darker, $color-cuboid-default, true);
+      @include cuboid(8px, $color-cuboid-default-darker, $color-cuboid-default, true);
     }
     &.watchout {
       background-color: $color-cuboid-watchout-light;
-      @include cuboid(4px, $color-cuboid-watchout-darker, $color-cuboid-watchout, true);
+      @include cuboid(8px, $color-cuboid-watchout-darker, $color-cuboid-watchout, true);
     }
     &.musou {
       background-color: $color-cuboid-musou-light;
-      @include cuboid(4px, $color-cuboid-musou-darker, $color-cuboid-musou, true);
+      @include cuboid(8px, $color-cuboid-musou-darker, $color-cuboid-musou, true);
     }
   }
   // FIXME: .button.simple.round OR .button-simple-round?
