@@ -1,6 +1,7 @@
 $rem: 16px;
-$text-size-standard: 1rem;
-$text-size-small: 0.875rem;
+$font-size-default: 1rem;
+$font-size-small: 0.875rem;
+$font-size-tiny: 0.75rem;
 $sans-serif-fonts: 'SF', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial';
 $font-sans-serif: $sans-serif-fonts, sans-serif; // -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 // -apple-system in macOS High Sierra & iOS 11 is weird

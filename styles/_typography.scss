@@ -137,10 +137,10 @@ h5 {
 // Font size
 // .font-size-smaller is removed
 .font-size-small {
-  font-size: 0.875rem;
+  font-size: $font-size-small;
 }
 .font-size-tiny {
-  font-size: 0.75rem;
+  font-size: $font-size-tiny;
 }
 
 // Text color
@@ -201,7 +201,7 @@ h5 {
 }
 
 .section-title {
-  font-size: 1rem;
+  font-size: $font-size-default;
   font-weight: bold;
   line-height: 1.125rem;
 
@@ -215,11 +215,11 @@ h5 {
       border-bottom: 2px black solid;
     }
     &.small {
-      font-size: 0.875rem;
+      font-size: $font-size-small;
       line-height: 1.125rem;
     }
     &.tiny {
-      font-size: 0.75rem;
+      font-size: $font-size-tiny;
       line-height: 0.875rem;
     }
   }
