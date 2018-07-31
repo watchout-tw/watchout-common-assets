@@ -177,29 +177,7 @@ h5 {
   text-align: right;
 }
 
-// FIXME: to be deprecated
-.section-title-underline,
-.section-title-underline-small,
-.section-title-underline-tiny {
-  font-weight: bold;
-  > span {
-    display: inline-block;
-    border-bottom: 2px black solid;
-  }
-}
-.section-title-underline {
-  font-size: 1rem;
-  line-height: 1.125rem;
-}
-.section-title-underline-small {
-  font-size: 0.875rem;
-  line-height: 1.125rem;
-}
-.section-title-underline-tiny {
-  font-size: 0.75rem;
-  line-height: 0.875rem;
-}
-
+// Section title
 .section-title {
   font-size: $font-size-default;
   font-weight: bold;
