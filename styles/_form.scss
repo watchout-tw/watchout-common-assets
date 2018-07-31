@@ -105,6 +105,11 @@
     cursor: default;
   }
 
+  &.switch {
+    margin: 0.25rem;
+    border-radius: 2px;
+  }
+
   &.shadow-reduced {
     @include shadow-reduced
   }
