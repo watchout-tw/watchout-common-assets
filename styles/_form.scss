@@ -4,6 +4,11 @@
   display: inline-block;
   line-height: 1em;
 
+  &.large {
+    font-size: 1.5rem;
+    padding: 0.875rem 1rem;
+    height: 3.25rem;
+  }
   &.medium {
     font-size: 0.9375rem;
     padding: 0.625rem;
