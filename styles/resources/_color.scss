@@ -9,7 +9,7 @@ $color-lab: $color-watchout;
 $color-console: $color-watchout;
 $color-ask: #4DEBDF;
 $color-musou: #FF5368;
-$color-edu: #B7F661;
+$color-uc: #B7F661;
 $color-maa: #4A4A4A; // TODO: not sure if this works
 $color-vendor: #F8E71C;
 
@@ -23,7 +23,7 @@ $watchout-colors: (
   console: $color-watchout,
   ask: #4DEBDF,
   musou: #FF5368,
-  edu: #B7F661,
+  uc: #B7F661,
   maa: #4A4A4A,
   vendor: #F8E71C
 );
@@ -43,7 +43,7 @@ $color-lab-darker: $color-watchout-darker;
 $color-console-darker: $color-watchout-darker;
 $color-ask-darker: #45D1C5;
 $color-musou-darker: #E64C5E;
-$color-edu-darker: #A4DB56;
+$color-uc-darker: #A4DB56;
 
 // Shades of black
 

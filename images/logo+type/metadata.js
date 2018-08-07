@@ -15,7 +15,7 @@ export default {
     width: 158,
     height: 64
   },
-  edu: {
+  uc: {
     width: 158,
     height: 64
   },
