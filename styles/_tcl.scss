@@ -34,6 +34,12 @@
     &.with-increased-top-margin {
       margin-top: 2rem;
     }
+    &.with-double-bottom-margin {
+      margin-bottom: 1rem;
+    }
+    &.with-quad-bottom-margin {
+      margin-bottom: 2rem;
+    }
     > .tcl-panel-nav-link {
       position: absolute;
       padding: 0.5rem 1rem;
