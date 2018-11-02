@@ -9,4 +9,7 @@
     margin-top: $length;
     margin-bottom: $length;
   }
+  .padding-#{$unit} {
+    padding: $length;
+  }
 }
