@@ -22,13 +22,15 @@ a.inline-block {
 }
 a.a-block,
 a.a-inline-block {
-  & .a-target {
-    display: inline;
-    @include underline(0.5);
-  }
-  &:hover, &:focus, &:active {
-    .a-target {
-      @include underline(1.0);
+  &:not(.disabled) {
+    & .a-target {
+      display: inline;
+      @include underline(0.5);
+    }
+    &:hover, &:focus, &:active {
+      .a-target {
+        @include underline(1.0);
+      }
     }
   }
 }
