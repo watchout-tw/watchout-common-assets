@@ -146,7 +146,7 @@ input[type='checkbox'] {
   width: 1.5rem;
   position: relative;
   transition: all .15s ease;
-  background-color: $color-very-very-light-grey;
+  background-color: $color-very-light-grey;
   border: none;
   border-radius: 50%;
   @include shadow;
@@ -154,6 +154,11 @@ input[type='checkbox'] {
 
   &:checked {
     background-color: $color-generic-grey;
+  }
+  &.watchout {
+    &:checked {
+      background-color: $color-watchout;
+    }
   }
   &.park {
     &:checked {
@@ -164,6 +169,9 @@ input[type='checkbox'] {
     &:checked {
       background-color: $color-ask;
     }
+  }
+  &.no-shadow {
+    box-shadow: none;
   }
   &[disabled],
   &.immutable {
