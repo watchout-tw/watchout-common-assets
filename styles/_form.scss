@@ -302,7 +302,10 @@ input[type='checkbox'] {
   cursor: pointer;
 
   &.expand {
-    @include triangleUp(12px, $color-nice-grey);
+    &:before {
+      content: '';
+      @include triangleUp;
+    }
     > * {
       display: inline-block;
       vertical-align: top;
@@ -310,7 +313,10 @@ input[type='checkbox'] {
   }
 
   &.shrink {
-    @include triangleDown(12px, $color-nice-grey);
+    &:before {
+      content: '';
+      @include triangleDown;
+    }
     > * {
       display: inline-block;
       vertical-align: top;
