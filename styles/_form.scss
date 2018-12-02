@@ -178,6 +178,10 @@ input[type='checkbox'] {
     box-shadow: none;
     cursor: default;
   }
+  &.more-padding {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 }
 
 .form-input-check-label {
