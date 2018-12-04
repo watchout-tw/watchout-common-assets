@@ -1,46 +1,46 @@
 export default {
   ask: {
-    width: 158,
+    width: 154,
     height: 64
   },
   c0ngress: {
-    width: 158,
+    width: 154,
     height: 64
   },
   console: {
-    width: 138,
+    width: 134,
     height: 64
   },
   core: {
-    width: 158,
+    width: 154,
     height: 64
   },
   uc: {
-    width: 158,
+    width: 154,
     height: 64
   },
   kangsim: {
-    width: 138,
+    width: 134,
     height: 64
   },
   lab: {
-    width: 178,
+    width: 174,
     height: 64
   },
   musou: {
-    width: 158,
+    width: 154,
     height: 64
   },
   'musou-media-experiment': {
-    width: 158,
+    width: 154,
     height: 64
   },
   park: {
-    width: 158,
+    width: 154,
     height: 64
   },
   watchout: {
-    width: 274,
+    width: 272,
     height: 64
   }
 }
