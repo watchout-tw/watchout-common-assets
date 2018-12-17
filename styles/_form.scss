@@ -252,7 +252,8 @@ input[type='checkbox'] {
     margin: 0.375rem;
   }
   > .button,
-  > .form-input-check-label {
+  > .form-input-check-label,
+  > .compact {
     width: auto;
     flex-basis: auto;
     flex-grow: 0;

@@ -79,6 +79,11 @@ $bp-xl: 1200px;
 }
 
 // Vertical breakpoints
+@mixin vbp-sm-up {
+  @media (min-height: #{$bp-sm}) {
+    @content;
+  }
+}
 @mixin vbp-md-up {
   @media (min-height: #{$bp-md}) {
     @content;

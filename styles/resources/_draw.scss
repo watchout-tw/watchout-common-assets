@@ -175,7 +175,7 @@
     animation: checkmark-draw-1 $animation-duration;
   }
   &:after {
-    width: $size * 1.75;
+    width: $size * 1.5;
     height: $stroke-width;
     margin-top: -$stroke-width;
     transform-origin: 0 0;
