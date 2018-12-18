@@ -14,7 +14,10 @@ const links = {
       direct: 'https://watchout.backme.tw/checkout/332/2688'
     }
   },
-  contact: rootURL + 'contact'
+  contact: rootURL + 'contact',
+  bunko: {
+    beta: 'https://beta.bunko.watchout.tw'
+  }
 }
 const announcements = {
   rows: [
