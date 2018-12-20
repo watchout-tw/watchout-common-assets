@@ -2,18 +2,22 @@
   float: none;
   display: block;
   position: absolute;
-  top: -0.25rem;
-  right: 0.25rem;
+  top: 0;
+  right: 0;
+  width: 1.75rem;
+  padding: 0 0.25rem;
+  height: 2rem;
+  overflow: hidden;
   opacity: 0.5;
-  font-size: 2rem;
-  line-height: 1;
-  border-bottom-width: 4px;
-  font-weight: 200;
-  text-shadow: none;
   cursor: pointer;
 
   &:before {
     content: '×';
+    display: block;
+    font-size: 2rem;
+    font-weight: 200;
+    line-height: 0.875em;
+    text-shadow: none;
   }
   &:hover, &:focus, &:active {
     opacity: 1;
