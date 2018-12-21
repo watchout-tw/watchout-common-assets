@@ -173,8 +173,7 @@ input[type='checkbox'] {
   &.no-shadow {
     box-shadow: none;
   }
-  &[disabled],
-  &.immutable {
+  &[disabled] {
     box-shadow: none;
     cursor: default;
   }
