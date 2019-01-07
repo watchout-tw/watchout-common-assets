@@ -67,7 +67,7 @@ h5 {
 }
 
 .paragraphs {
-  margin: 1rem 0;
+  margin: 1em 0;
   &.first {
     margin-top: 0;
   }
@@ -75,10 +75,10 @@ h5 {
     margin-bottom: 0;
   }
   &.margin-8 {
-    margin: 0.5rem 0;
+    margin: 0.5em 0;
   }
   &.margin-4 {
-    margin: 0.25rem 0;
+    margin: 0.25em 0;
   }
   &.no-margin {
     margin-top: 0;
@@ -102,7 +102,7 @@ h5 {
   }
   > h2, > h3, > h4 {
     margin-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
   }
   > p {
     margin-top: 0;
@@ -113,7 +113,7 @@ h5 {
   }
   ol {
     list-style: decimal;
-    padding-left: 1.25rem;
+    padding-left: 1.25em;
   }
   ul {
     list-style: disc;
