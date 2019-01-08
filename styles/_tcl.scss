@@ -86,14 +86,14 @@
     max-width: $tcl-bp-lg;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-    &.without-margin {
+    &.no-margin {
       margin-top: 0;
       margin-bottom: 0;
     }
     > .tcl-panel {
       flex-basis: calc((100% - #{$tcl-gap * 3}) / 2);
       margin: 0.5rem;
-      &.without-margin {
+      &.no-margin {
         margin-top: 0;
         margin-bottom: 0;
       }
