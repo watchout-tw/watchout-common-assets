@@ -22,15 +22,18 @@
   &:hover, &:focus, &:active {
     opacity: 1;
   }
-
   &.white {
     &, &:hover, &:focus, &:active {
       color: white;
     }
   }
   &.small {
-    font-size: 1.5rem;
-    font-weight: 300;
+    width: 1.5rem;
+    height: 1.75rem;
+    &:before {
+      font-size: 1.75rem;
+      font-weight: 400;
+    }
   }
 }
 
