@@ -74,6 +74,17 @@
   transform: scaleX(0.66666667);
 }
 
+@mixin triangleRight($size: 8px, $color: $color-nice-grey) {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: $size solid transparent;
+  border-bottom: $size solid transparent;
+  border-left: $size solid $color;
+  border-right: ($size / 4) solid transparent;
+  transform: scaleY(0.66666667);
+}
+
 @mixin cuboid($depth, $color-bottom, $color-side, $pushable: false) {
   &:before,
   &:after {
