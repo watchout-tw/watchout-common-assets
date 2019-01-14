@@ -19,33 +19,8 @@ const links = {
     beta: 'https://beta.bunko.watchout.tw'
   }
 }
-const announcements = {
-  rows: [
-    {
-      type: 'breaking',
-      channel: 'system',
-      content: '你知道今年11月24日將有什麼大事發生嗎？四年一度的各地縣市長PK，激戰即將展開。到底誰能勝出？請密切關注：沃草2018《六都市長給問嗎》',
-      action: {
-        label: '點我前往',
-        link: 'https://ask.watchout.tw/'
-      }
-    }
-    /*
-    {
-      type: 'livestream',
-      channel: 'ask',
-      content: '2018台北市長給問嗎？第一場辯論會直播即將開始！',
-      action: {
-        label: '點我前往',
-        link: 'https://waa.tw/g90Jdf'
-      }
-    }
-    */
-  ]
-}
 
 export default {
   channels,
-  links,
-  announcements
+  links
 }
