@@ -15,55 +15,55 @@ h1, h2, h3, h4, h5 {
   }
 }
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.5em;
   &.small {
-    font-size: 1.5rem;
+    font-size: 1.5em;
   }
   &.medium {
-    font-size: 1.75rem;
+    font-size: 1.75em;
     @include bp-sm-up {
-      font-size: 1.875rem;
+      font-size: 1.875em;
     }
   }
   &.large {
-    font-size: 3rem;
+    font-size: 3em;
   }
 }
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   &.small {
-    font-size: 1rem;
+    font-size: 1em;
   }
   &.medium {
-    font-size: 1.25rem;
+    font-size: 1.25em;
   }
   &.large {
-    font-size: 2rem;
+    font-size: 2em;
   }
 }
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.25em;
   &.small {
-    font-size: 1rem;
+    font-size: 1em;
   }
   &.large {
-    font-size: 1.5rem;
+    font-size: 1.5em;
   }
   &.larger {
-    font-size: 2rem;
+    font-size: 2em;
   }
 }
 h4 {
-  font-size: 1rem;
+  font-size: 1em;
   &.small {
-    font-size: 0.875rem;
+    font-size: 0.875em;
   }
   &.large {
-    font-size: 1.125rem;
+    font-size: 1.125em;
   }
 }
 h5 {
-  font-size: 0.875rem;
+  font-size: 0.875em;
 }
 
 .paragraphs {
@@ -101,7 +101,7 @@ h5 {
     }
   }
   > h2, > h3, > h4 {
-    margin-top: 0;
+    margin-top: 1em;
     margin-bottom: 1em;
   }
   > p {
@@ -143,6 +143,27 @@ h5 {
   }
   &.last {
     padding-right: 0;
+  }
+}
+
+// Responsive typesetting
+$rt-margin: 1rem;
+$rt-container-max-width: 49.5rem; // 36em at 22px
+.responsive-typesetting-container {
+  margin-left: $rt-margin;
+  margin-right: $rt-margin;
+  max-width: $rt-container-max-width;
+  @media (min-width: #{$rt-container-max-width + 2 * $rt-margin}) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.variable-font-size {
+  @media (min-width: 28rem) {
+    font-size: 1.25rem;
+  }
+  @media (min-width: 40rem) {
+    font-size: 1.375rem;
   }
 }
 
