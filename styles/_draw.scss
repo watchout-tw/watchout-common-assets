@@ -1,3 +1,12 @@
 .close {
   @include close;
 }
+
+.play-button {
+  width: 64px;
+  height: 44px;
+  background-image: url('~watchout-common-assets/images/buttons/play.png');
+  background-size: contain;
+  background-color: rgba($color-watchout, 0.95);
+  @include shadow;
+}
