@@ -113,6 +113,17 @@
   &.shadow-reduced {
     @include shadow-reduced
   }
+
+  &.play {
+    width: 64px;
+    height: 44px;
+    margin: 0;
+    padding: 0;
+    background-image: url('~watchout-common-assets/images/buttons/play.png');
+    background-size: contain;
+    background-color: rgba($color-watchout, 0.95);
+    @include shadow;
+  }
 }
 
 input[type='text'],
