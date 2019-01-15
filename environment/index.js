@@ -16,7 +16,7 @@ const links = {
   },
   contact: rootURL + 'contact',
   bunko: {
-    beta: 'https://beta.bunko.watchout.tw'
+    beta: 'https://beta.bunko.watchout.tw/'
   }
 }
 
