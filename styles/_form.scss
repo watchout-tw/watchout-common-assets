@@ -15,9 +15,14 @@
     height: 2.25rem;
   }
   &.small {
-    font-size: 0.875rem;
+    font-size: $font-size-small;
     padding: 0.5rem;
     height: 2rem;
+  }
+  &.tiny {
+    font-size: $font-size-tiny;
+    padding: 0.5rem;
+    height: 1.75rem;
   }
   &.vendor {
     background-color: #F8E71C;
