@@ -13,7 +13,6 @@
     position: relative;
     width: 100%;
     flex-basis: $tcl-bp-sm;
-    overflow: hidden;
     @if $tcl-dev-mode == true {
       border: 1px $color-very-light-grey solid;
     }
