@@ -33,6 +33,7 @@ h2 {
   font-size: 1.5em;
   &.small {
     font-size: 1em;
+    line-height: $line-height-default;
   }
   &.medium {
     font-size: 1.25em;
@@ -45,9 +46,10 @@ h3 {
   font-size: 1.25em;
   &.small {
     font-size: 1em;
+    line-height: $line-height-default;
   }
   &.medium {
-    font-size: 1.125rem;
+    font-size: 1.125em;
   }
   &.large {
     font-size: 1.5em;
@@ -58,6 +60,7 @@ h3 {
 }
 h4 {
   font-size: 1em;
+  line-height: $line-height-default;
   &.small {
     font-size: 0.875em;
   }
@@ -66,10 +69,12 @@ h4 {
   }
   &.large {
     font-size: 1.125em;
+    line-height: $line-height-compact;
   }
 }
 h5 {
   font-size: 0.875em;
+  line-height: $line-height-default;
 }
 
 .paragraphs {
