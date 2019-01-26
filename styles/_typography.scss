@@ -170,14 +170,23 @@ h5 {
 
 // Responsive typesetting
 $rt-margin: 1rem;
-$rt-container-max-width: 49.5rem; // 36em at 22px
+$rt-container-max-width-default: 49.5rem; // 36em at 22px
+$rt-container-max-width-small: 27.5rem;
 .responsive-typesetting-container {
   margin-left: $rt-margin;
   margin-right: $rt-margin;
-  max-width: $rt-container-max-width;
-  @media (min-width: #{$rt-container-max-width + 2 * $rt-margin}) {
+  max-width: $rt-container-max-width-default;
+  @media (min-width: #{$rt-container-max-width-default + 2 * $rt-margin}) {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  &.container-size-small {
+    max-width: $rt-container-max-width-small;
+    @media(min-width: #{$rt-container-max-width-small + 2 * $rt-margin}) {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
 .variable-font-size {
