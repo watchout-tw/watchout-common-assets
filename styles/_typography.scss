@@ -171,7 +171,7 @@ h5 {
 // Responsive typesetting
 $rt-margin: 1rem;
 $rt-container-max-width-default: 49.5rem; // 36em at 22px
-$rt-container-max-width-small: 27.5rem;
+$rt-container-max-width-small: 22rem;
 .responsive-typesetting-container {
   margin-left: $rt-margin;
   margin-right: $rt-margin;
@@ -193,10 +193,10 @@ $rt-container-max-width-small: 27.5rem;
   font-size: 1rem;
   line-height: 1.625;
   @media (min-width: 28rem) {
-    font-size: 1.25rem;
+    font-size: $font-size-variable-medium;
   }
   @media (min-width: 40rem) {
-    font-size: 1.375rem;
+    font-size: $font-size-variable-large;
   }
 }
 
