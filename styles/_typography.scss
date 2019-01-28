@@ -201,7 +201,12 @@ $rt-container-max-width-small: 22rem;
 }
 
 // Font size
-// .font-size-smaller is removed
+.font-size-variable-large {
+  font-size: $font-size-variable-large;
+}
+.font-size-variable-medium {
+  font-size: $font-size-variable-medium;
+}
 .font-size-default {
   font-size: 1rem;
 }
