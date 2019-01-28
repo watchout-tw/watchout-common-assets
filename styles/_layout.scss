@@ -15,7 +15,8 @@
   display: block;
   width: 100%;
   > img,
-  > .image {
+  > .image,
+  > .caption {
     display: block;
     width: 100%;
     max-width: 40rem;
@@ -46,5 +47,10 @@
       border: 2px $color-nice-grey solid;
       border-radius: 1px;
     }
+  }
+  > .caption {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: $color-secondary-text-grey;
   }
 }
