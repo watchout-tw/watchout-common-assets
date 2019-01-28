@@ -14,43 +14,45 @@
 .image-container {
   display: block;
   width: 100%;
-  > img,
-  > .image,
+  $max-width-default: 40rem;
+  $side-margin: 1rem;
+  > img, > .image,
   > .caption {
     display: block;
+    max-width: $max-width-default;
+  }
+  > img, > .image {
     width: 100%;
-    max-width: 40rem;
     margin: 0 auto;
   }
+  > .caption {
+    margin: 0.5rem $side-margin;
+    @media (min-width: #{$max-width-default + $side-margin * 2}) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    color: $color-secondary-text-grey;
+  }
   &.full-width {
-    > img,
-    > .image {
+    > img, > .image {
       max-width: 96rem;
     }
   }
   &.portrait {
-    > img,
-    > .image {
+    > img, > .image {
       max-width: 30rem;
     }
   }
   &.document {
-    > img,
-    > .image {
+    > img, > .image {
       border: 1px $color-very-light-grey solid;
       border-radius: 1px;
     }
   }
   &.manga {
-    > img,
-    > .image {
+    > img, > .image {
       border: 2px $color-nice-grey solid;
       border-radius: 1px;
     }
-  }
-  > .caption {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    color: $color-secondary-text-grey;
   }
 }
