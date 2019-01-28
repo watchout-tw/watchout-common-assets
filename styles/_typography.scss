@@ -260,16 +260,17 @@ $rt-container-max-width-small: 22rem;
 // Section title
 .section-title {
   font-size: $font-size-default;
+  line-height: $line-height-tight;
   font-weight: bold;
-  line-height: 1.125rem;
-
   &.with-increased-top-margin {
     margin-top: 1rem;
   }
-
+  &.multi-line {
+    line-height: $line-height-default;
+  }
   &.with-underline {
     > span {
-      display: inline-block;
+      display: inline;
       border-bottom: 2px black solid;
     }
     &.small {
