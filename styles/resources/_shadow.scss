@@ -1,4 +1,4 @@
-$color-shadow-minimum: rgba(black, 0.1);
+$color-shadow-minimum: rgba(black, 0.125);
 $color-shadow: rgba(black, 0.25);
 $color-shadow-darker: rgba(black, 0.35);
 $color-shadow-darkest: rgba(black, 0.94);
@@ -26,4 +26,7 @@ $color-shadow-darkest: rgba(black, 0.94);
 }
 @mixin shadow-expanded {
   box-shadow: 0 8px 48px 0 $color-shadow;
+}
+@mixin shadow-expanded-soft {
+  box-shadow: 0 8px 48px 0 $color-shadow-minimum;
 }
