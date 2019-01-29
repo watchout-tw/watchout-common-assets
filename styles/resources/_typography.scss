@@ -24,8 +24,8 @@ $line-height-relaxed: 1.75;
 
 // Styling
 
-@mixin underline($opacity) {
-  border-bottom: 2px rgba($color-watchout, $opacity) solid;
+@mixin underline($color, $opacity) {
+  border-bottom: 2px rgba($color, $opacity) solid;
 }
 
 // Font smoothing

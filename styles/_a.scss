@@ -7,10 +7,16 @@ a, a:hover, a:focus, a:active, a:visited {
 a.a-text,
 .a-text-parent a {
   display: inline;
-  @include underline(0.5);
+  @include underline($color-watchout, 0.65);
+  &.text-color-musou {
+    @include underline($color-musou, 0.65);
+  }
 
   &:hover, &:focus, &:active {
-    @include underline(1.0);
+    @include underline($color-watchout, 1.0);
+    &.text-color-musou {
+      @include underline($color-musou, 1.0);
+    }
   }
 }
 a.a-block {
@@ -25,11 +31,11 @@ a.a-inline-block {
   &:not(.disabled) {
     & .a-target {
       display: inline;
-      @include underline(0.5);
+      @include underline($color-watchout, 0.65);
     }
     &:hover, &:focus, &:active {
       .a-target {
-        @include underline(1.0);
+        @include underline($color-watchout, 1.0);
       }
     }
   }
