@@ -151,6 +151,26 @@ h5 {
       margin-bottom: 0;
     }
   }
+  ul ul,
+  ol ul {
+    list-style: circle;
+  }
+  ul ul ul,
+  ol ul ul,
+  ul ol ul,
+  ol ol ul {
+    list-style: square;
+  }
+  ul ul ul ul,
+  ol ul ul ul,
+  ul ol ul ul,
+  ol ol ul ul,
+  ul ul ol ul,
+  ol ul ol ul,
+  ul ol ol ul,
+  ol ol ol ul {
+    list-style: disc;
+  }
   > blockquote {
     font-size: 1.5em;
     color: $color-secondary-text-grey;
