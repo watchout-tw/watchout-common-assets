@@ -17,7 +17,11 @@
       border: 1px $color-very-light-grey solid;
     }
     &.half-width {
-      flex-basis: calc((100% - #{$tcl-gap * 3}) / 2);
+      $panel-width: calc((100% - #{$tcl-gap * 3}) / 2);
+      flex-basis: $panel-width;
+      &.strict {
+        max-width: $panel-width;
+      }
       margin: 0.5rem;
     }
     &.with-padding {
@@ -37,7 +41,18 @@
     &.with-double-bottom-margin {
       margin-bottom: 1rem;
     }
+    &.with-double-top-bottom-margin {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    &.with-quad-top-margin {
+      margin-top: 2rem;
+    }
     &.with-quad-bottom-margin {
+      margin-bottom: 2rem;
+    }
+    &.with-quad-top-bottom-margin {
+      margin-top: 2rem;
       margin-bottom: 2rem;
     }
     > .tcl-panel-nav-link {
@@ -73,7 +88,11 @@
 @include tcl-sm {
   .tcl-container {
     > .tcl-panel {
-      flex-basis: $tcl-panel-max-width;
+      $panel-width: $tcl-panel-max-width;
+      flex-basis: $panel-width;
+      &.strict {
+        max-width: $panel-width;
+      }
     }
   }
   .tcl-left-right-margin {
@@ -91,7 +110,11 @@
       margin-bottom: 0;
     }
     > .tcl-panel {
-      flex-basis: calc((100% - #{$tcl-gap * 3}) / 2);
+      $panel-width: calc((100% - #{$tcl-gap * 3}) / 2);
+      flex-basis: $panel-width;
+      &.strict {
+        max-width: $panel-width;
+      }
       margin: 0.5rem;
       &.no-margin {
         margin-top: 0;
@@ -99,17 +122,32 @@
       }
       &.full-width {
         flex-basis: 100%;
+        &.strict {
+          max-width: 100%;
+        }
         margin-left: 1rem;
         margin-right: 1rem;
       }
       &.half-width {
-        flex-basis: calc((100% - #{$tcl-gap * 5}) / 4);
+        $panel-width: calc((100% - #{$tcl-gap * 5}) / 4);
+        flex-basis: $panel-width;
+        &.strict {
+          max-width: $panel-width;
+        }
       }
       &.three-quarters-width {
-        flex-basis: calc((100% - #{$tcl-gap * 5}) / 4 * 3 + #{$tcl-gap * 2});
+        $panel-width: calc((100% - #{$tcl-gap * 5}) / 4 * 3 + #{$tcl-gap * 2});
+        flex-basis: $panel-width;
+        &.strict {
+          max-width: $panel-width;
+        }
       }
       &.quarter-width {
-        flex-basis: calc((100% - #{$tcl-gap * 5}) / 4);
+        $panel-width: calc((100% - #{$tcl-gap * 5}) / 4);
+        flex-basis: $panel-width;
+        &.strict {
+          max-width: $panel-width;
+        }
       }
     }
   }
