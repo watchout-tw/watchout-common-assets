@@ -3,6 +3,15 @@ a, a:hover, a:focus, a:active, a:visited {
   text-decoration: none;
   cursor: pointer;
   line-height: $line-height-tight; // TODO: is this ok?
+  &.secondary-text {
+    color: $color-secondary-text-grey;
+  }
+  &.text-color-watchout {
+    color: $color-watchout;
+  }
+  &.text-color-musou {
+    color: $color-musou;
+  }
 }
 a.a-text,
 .a-text-parent a {
