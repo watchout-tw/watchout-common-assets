@@ -320,7 +320,22 @@ ul.bulleted-list {
   padding: 2px 0;
 }
 
-.full-width-punctuation {
-  margin-left: -0.1875em;
-  margin-right: -0.1875em;
+.full-width-punct {
+  $unit-margin: 0.1875em;
+  &.thin-punct {
+    margin-left: $unit-margin * -1;
+    margin-right: $unit-margin * -1;
+  }
+  &.thick-punct {
+    margin-left: $unit-margin / 3 * -2;
+    margin-right: $unit-margin / 3 * -2;
+  }
+  &.left-punct {
+    margin-left: $unit-margin / 3 * -4;
+    margin-right: 0;
+  }
+  &.right-punct {
+    margin-left: 0;
+    margin-right: $unit-margin / 3 * -4;
+  }
 }
