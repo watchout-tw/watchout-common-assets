@@ -85,6 +85,20 @@
   transform: scaleY(0.66666667);
 }
 
+@mixin pause($size: 8px, $color: $color-nice-grey) {
+  &:before,
+  &:after {
+    content: '';
+    display: inline-block;
+    width: $size/2;
+    height: $size * 1.25;
+    background-color: $color;
+  }
+  &:before {
+    margin-right: $size/3;
+  }
+}
+
 @mixin cuboid($depth, $color-bottom, $color-side, $pushable: false) {
   &:before,
   &:after {
