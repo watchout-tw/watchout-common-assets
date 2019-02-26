@@ -4,9 +4,9 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 1.75rem;
+  width: 2.25rem;
   padding: 0 0.25rem;
-  height: 2rem;
+  height: 2.25rem;
   overflow: hidden;
   opacity: 0.5;
   cursor: pointer;
@@ -17,6 +17,7 @@
     font-size: 2rem;
     font-weight: 200;
     line-height: 0.875em;
+    text-align: right;
     text-shadow: none;
   }
   &:hover, &:focus, &:active {
