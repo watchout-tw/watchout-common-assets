@@ -112,7 +112,9 @@ h5 {
     }
   }
   > h2, > h3, > h4 {
-    margin-top: 2em;
+    &:not(:first-child) {
+      margin-top: 2em;
+    }
     margin-bottom: 1em;
   }
   &.heading-size-medium {
@@ -223,7 +225,7 @@ $rt-container-max-width-small: 22rem;
   }
 }
 .variable-font-size {
-  font-size: 1rem;
+  font-size: $font-size-variable-default;
   line-height: 1.625;
   @media (min-width: 28rem) {
     font-size: $font-size-variable-medium;
