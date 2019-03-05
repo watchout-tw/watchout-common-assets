@@ -134,9 +134,9 @@ h5 {
   > p {
     margin-top: 0;
     margin-bottom: 1em;
-  }
-  > p:last-child {
-    margin-bottom: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
   ol {
     list-style: decimal;
@@ -191,7 +191,7 @@ h5 {
     margin-bottom: 1.5em;
     // NOTE: use second-level quote for meta info of first-level quote
     > blockquote {
-      font-size: 0.625em;
+      font-size: 0.5625em;
     }
   }
 }
