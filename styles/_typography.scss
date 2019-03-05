@@ -131,6 +131,20 @@ h5 {
       font-size: 0.875em;
     }
   }
+  &.single { // notes & excerpts within article
+    > h2, > h3, > h4 {
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    > blockquote {
+      margin-top: 0;
+      margin-bottom: 1em;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
   > p {
     margin-top: 0;
     margin-bottom: 1em;
