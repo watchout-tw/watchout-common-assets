@@ -12,6 +12,12 @@
   .padding-#{$unit} {
     padding: $length;
   }
+  .padding-top-#{$unit} {
+    padding-top: $length;
+  }
+  .padding-bottom-#{$unit} {
+    padding-bottom: $length;
+  }
   .padding-top-bottom-#{$unit} {
     padding-top: $length;
     padding-bottom: $length;
