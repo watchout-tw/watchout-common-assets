@@ -227,25 +227,24 @@ h5 {
 
 // Responsive typesetting
 $rt-margin: 1rem;
-$rt-container-max-width-default: 49.5rem; // 36em at 22px
-$rt-container-max-width-small: 22rem;
-.responsive-typesetting-container {
-  margin-left: $rt-margin;
-  margin-right: $rt-margin;
-  max-width: $rt-container-max-width-default;
-  @media (min-width: #{$rt-container-max-width-default + 2 * $rt-margin}) {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  &.container-size-small {
-    max-width: $rt-container-max-width-small;
-    @media(min-width: #{$rt-container-max-width-small + 2 * $rt-margin}) {
+$rt-container-sizes: (
+  default: 49.5rem, // 36em at 22px
+  medium: 35.75rem, // 26em at 22px
+  small: 22rem // 16em at 22px
+);
+@each $name, $size in $rt-container-sizes {
+  $suffix: if($name == default, '', '-' + $name);
+  .responsive-typesetting-container#{$suffix} {
+    margin-left: $rt-margin;
+    margin-right: $rt-margin;
+    max-width: $size;
+    @media (min-width: #{$size + 2 * $rt-margin}) {
       margin-left: auto;
       margin-right: auto;
     }
   }
 }
+
 .variable-font-size {
   font-size: $font-size-variable-default;
   line-height: 1.625;

@@ -11,28 +11,36 @@
   text-align: center;
 }
 
-.image-container {
-  display: block;
-  width: 100%;
-  $max-width-default: 40rem;
-  $side-margin: 1rem;
-  > img, > .image,
-  > .caption {
+$image-container-side-margin: 1rem;
+$image-container-sizes: (
+  default: 42rem,
+  medium: 32rem
+);
+@each $name, $size in $image-container-sizes {
+  $suffix: if($name == default, '', '-' + $name);
+  .image-container#{$suffix} {
     display: block;
-    max-width: $max-width-default;
-  }
-  > img, > .image {
     width: 100%;
-    margin: 0 auto;
-  }
-  > .caption {
-    margin: 0.5rem $side-margin;
-    @media (min-width: #{$max-width-default + $side-margin * 2}) {
-      margin-left: auto;
-      margin-right: auto;
+
+    > img, > .image {
+      display: block;
+      max-width: $size;
+      width: 100%;
+      margin: 0 auto;
     }
-    color: $color-secondary-text-grey;
+    > .caption {
+      display: block;
+      max-width: $size;
+      margin: 0.5rem $image-container-side-margin;
+      @media (min-width: #{$size + $image-container-side-margin * 2}) {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      color: $color-secondary-text-grey;
+    }
   }
+}
+.image-container { // FIXME: legacy extension of default image-container
   &.full-width {
     > img, > .image {
       max-width: 96rem;
