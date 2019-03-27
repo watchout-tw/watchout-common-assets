@@ -230,6 +230,7 @@ input[type='checkbox'] {
   @include form-field;
   margin: 0.25rem 0;
   padding-top: 1.25rem;
+  > label,
   > .field-label {
     position: absolute;
     top: 0;
@@ -238,6 +239,9 @@ input[type='checkbox'] {
     color: $color-secondary-text-grey;
   }
   > .input {
+    flex-grow: 1;
+  }
+  > .inputs {
     flex-grow: 1;
   }
 }
