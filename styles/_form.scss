@@ -218,17 +218,9 @@ input[type='checkbox'] {
 
 .form-field {
   @include form-field;
-  margin: 0.25rem 0;
-  &.with-double-top-margin {
-    margin-top: 0.5rem;
-  }
-  > .input {
-    flex-grow: 1;
-  }
 }
 .form-field-with-label {
   @include form-field;
-  margin: 0.25rem 0;
   padding-top: 1.25rem;
   > label,
   > .field-label {
@@ -247,7 +239,6 @@ input[type='checkbox'] {
 }
 .form-field-buttons {
   @include form-field;
-  margin: 0.25rem 0;
   > .button {
     margin: 0.375rem;
     flex-grow: 1;
@@ -269,9 +260,9 @@ input[type='checkbox'] {
     flex-grow: 1;
     margin: 0.375rem;
   }
+  > .compact,
   > .button,
-  > .form-input-check-label,
-  > .compact {
+  > .form-input-check-label {
     width: auto;
     flex-basis: auto;
     flex-grow: 0;
