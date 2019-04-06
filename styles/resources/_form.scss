@@ -47,5 +47,8 @@ $button-padding-regular: 0.75rem;
   > .input {
     flex-grow: 1;
     flex-shrink: 0;
+    &.shrink {
+      flex-shrink: 1;
+    }
   }
 }
