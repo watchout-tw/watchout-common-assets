@@ -17,7 +17,6 @@
     font-size: 2rem;
     font-weight: 200;
     line-height: 0.875em;
-    text-align: right;
     text-shadow: none;
   }
   &:hover, &:focus, &:active {
@@ -34,6 +33,18 @@
     &:before {
       font-size: 1.75rem;
       font-weight: 400;
+    }
+  }
+  & {
+    &:before {
+      text-align: right;
+    }
+  }
+  &.left {
+    left: 0;
+    right: auto;
+    &:before {
+      text-align: left;
     }
   }
 }
