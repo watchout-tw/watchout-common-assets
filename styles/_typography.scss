@@ -289,6 +289,9 @@ $rt-container-sizes: (
   color: $color-push-button-text-white;
 }
 
+.line-height-single {
+  line-height: $line-height-single;
+}
 .line-height-tight {
   line-height: $line-height-tight;
 }
