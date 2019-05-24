@@ -9,6 +9,11 @@
     padding: 0.875rem 1rem;
     height: 3.25rem;
   }
+  &.medium-large {
+    font-size: 1.25rem;
+    padding: 0.75rem;
+    height: 2.75rem;
+  }
   &.medium {
     font-size: 0.9375rem;
     padding: 0.625rem;
@@ -127,6 +132,10 @@
     background-image: url('~watchout-common-assets/images/buttons/play.png');
     background-size: contain;
     background-color: rgba($color-watchout, 0.95);
+  }
+
+  &.flexible {
+    height: auto;
   }
 }
 
