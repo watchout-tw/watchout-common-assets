@@ -272,6 +272,9 @@ $rt-container-sizes: (
 .font-size-tiny {
   font-size: $font-size-tiny;
 }
+.font-size-nano {
+  font-size: $font-size-nano;
+}
 
 // Text color
 @each $channel, $color in $watchout-colors {

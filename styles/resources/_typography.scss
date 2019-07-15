@@ -2,11 +2,12 @@ $rem: 16px;
 $font-size-default: 1rem;
 $font-size-small: 0.875rem;
 $font-size-tiny: 0.75rem;
+$font-size-nano: 0.625rem;
 $sans-serif-fonts: 'SF', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial';
 $font-sans-serif: $sans-serif-fonts, sans-serif; // -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 // -apple-system in macOS High Sierra & iOS 11 is weird
 $font-serif: $sans-serif-fonts, "noto-serif-patch", "source-han-serif-tc", serif;
-$font-monospace: monospace;
+$font-monospace: 'SF Mono', 'Menlo', monospace;
 
 @mixin font-monospace {
   font-family: $font-monospace;

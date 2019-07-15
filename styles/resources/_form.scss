@@ -44,6 +44,9 @@ $button-padding-regular: 0.75rem;
       margin-bottom: $length;
     }
   }
+  &.no-margin {
+    margin: 0;
+  }
   > .input {
     flex-grow: 1;
     flex-shrink: 0;
