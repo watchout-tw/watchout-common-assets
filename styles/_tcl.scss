@@ -55,6 +55,15 @@
       margin-top: 2rem;
       margin-bottom: 2rem;
     }
+    // use this
+    &.with-top-bottom-margin-single {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    &.with-top-bottom-margin-double {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
     > .tcl-panel-nav-link {
       position: absolute;
       padding: 0.5rem 1rem;
