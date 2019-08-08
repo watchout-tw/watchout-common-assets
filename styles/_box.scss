@@ -12,6 +12,10 @@
     margin-top: $length;
     margin-bottom: $length;
   }
+  .margin-right-left-#{$unit} {
+    margin-right: $length;
+    margin-left: $length;
+  }
   .padding-#{$unit} {
     padding: $length;
   }
@@ -24,5 +28,9 @@
   .padding-top-bottom-#{$unit} {
     padding-top: $length;
     padding-bottom: $length;
+  }
+  .padding-right-left-#{$unit} {
+    padding-right: $length;
+    padding-left: $length;
   }
 }
