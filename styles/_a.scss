@@ -27,6 +27,13 @@ a.a-text,
       @include underline($color-musou, 1.0);
     }
   }
+
+  &.monochrome {
+    @include underline(black, 0.25);
+    &:hover, &:focus, &:active {
+      @include underline(black, 1.0);
+    }
+  }
 }
 a.a-block {
   display: block;
