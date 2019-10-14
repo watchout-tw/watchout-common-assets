@@ -12,9 +12,9 @@ class Channel {
     this.links = {
       home: home
     }
+    this.dark = ['musou', 'musou-media-experiment', 'bunko', 'maa'].includes(id)
     this.switcher = {
       show: true,
-      dark: ['musou', 'musou-media-experiment', 'bunko', 'maa'].includes(id),
       iconOnly: id === 'watchout'
     }
   }
