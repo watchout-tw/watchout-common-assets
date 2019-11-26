@@ -7,11 +7,11 @@ const links = {
   support: {
     general: rootURL + '#support',
     watchout: {
-      custom: 'https://watchout.backme.tw/checkout/332/2688',
-      direct: 'https://watchout.backme.tw/checkout/332/2686'
+      custom: 'https://watchout.backme.tw/checkout/332/7818',
+      direct: 'https://watchout.backme.tw/checkout/332/7818'
     },
     ask: {
-      direct: 'https://watchout.backme.tw/checkout/332/2688'
+      direct: 'https://watchout.backme.tw/checkout/332/7818'
     }
   },
   contact: rootURL + 'contact',
