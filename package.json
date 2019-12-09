@@ -10,6 +10,7 @@
     "bootstrap": "4.1.2"
   },
   "devDependencies": {
+    "@nuxtjs/eslint-config": "^1.1.2",
     "watchout-common-functions": "file:../watchout-common-functions"
   }
 }
