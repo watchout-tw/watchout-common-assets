@@ -10,7 +10,7 @@ class Channel {
       }
     }
     this.links = {
-      home: home
+      home
     }
     this.dark = ['musou', 'musou-media-experiment', 'bunko', 'maa'].includes(id)
     this.switcher = {
