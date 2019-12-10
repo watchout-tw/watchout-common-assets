@@ -16,9 +16,11 @@ a, a:hover, a:focus, a:active, a:visited {
 a.a-text,
 .a-text-parent a {
   display: inline;
-  @include underline($color-watchout, 0.65);
-  &.text-color-musou {
-    @include underline($color-musou, 0.65);
+  & {
+    @include underline($color-watchout, 0.65);
+    &.text-color-musou {
+      @include underline($color-musou, 0.65);
+    }
   }
 
   &:hover, &:focus, &:active {
@@ -29,7 +31,7 @@ a.a-text,
   }
 
   &.monochrome {
-    @include underline(black, 0.25);
+    @include underline(black, 0.35);
     &:hover, &:focus, &:active {
       @include underline(black, 1.0);
     }
@@ -45,13 +47,25 @@ a.inline-block {
 a.a-block,
 a.a-inline-block {
   &:not(.disabled) {
-    & .a-target {
-      display: inline;
-      @include underline($color-watchout, 0.65);
+    & {
+      .a-target {
+        display: inline;
+        @include underline($color-watchout, 0.65);
+      }
     }
     &:hover, &:focus, &:active {
       .a-target {
         @include underline($color-watchout, 1.0);
+      }
+    }
+    &.monochrome {
+      .a-target {
+        @include underline(black, 0.35);
+      }
+    }
+    &.monochrome:hover, &.monochrome:focus, &.monochrome:active {
+      .a-target {
+        @include underline(black, 1.0);
       }
     }
   }
