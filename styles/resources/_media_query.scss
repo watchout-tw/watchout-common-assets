@@ -96,3 +96,13 @@ $bp-xl: 1200px;
     @content;
   }
 }
+
+// Device-specific
+
+$bp-iphone5: 320px;
+
+@mixin iPhone5 {
+  @media (max-width: #{$bp-iphone5}) {
+    @content;
+  }
+}
