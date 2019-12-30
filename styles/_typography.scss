@@ -327,7 +327,7 @@ $rt-container-sizes: (
   &.with-underline {
     > span {
       display: inline;
-      border-bottom: 2px black solid;
+      border-bottom: 2px currentcolor solid;
     }
     &.small {
       font-size: $font-size-small;
