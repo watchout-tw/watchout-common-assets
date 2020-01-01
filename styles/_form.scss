@@ -137,6 +137,16 @@
   &.flexible {
     height: auto;
   }
+
+  &.flat {
+  box-shadow: none;
+  border-radius: 1.25rem;
+  height: auto;
+    &.small {
+      padding: 0.625rem;
+      border-radius: 1.0625rem;
+    }
+  }
 }
 
 input[type='text'],
@@ -278,7 +288,7 @@ input[type='checkbox'] {
   }
   &.tight {
     > .input {
-      margin: 0 0.25rem;
+      margin: 0.25rem;
     }
   }
   &.no-wrap {
