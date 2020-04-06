@@ -7,7 +7,7 @@
   "author": "Department of Technology at Watchout <dev@watchout.tw>",
   "license": "MIT",
   "dependencies": {
-    "bootstrap": "4.1.2"
+    "bootstrap": "4.3.1"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.1.2",
