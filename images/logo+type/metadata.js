@@ -1,4 +1,8 @@
 export default {
+  'anti-nuclear': {
+    width: 272,
+    height: 64
+  },
   ask: {
     width: 154,
     height: 64

@@ -17,8 +17,25 @@ class Channel {
       show: true,
       iconOnly: id === 'watchout'
     }
+    this.pages = []
   }
 }
+
+class Page extends Channel {
+  constructor(id, name, home, page) {
+    super(id, name, home)
+    this.pageID = page
+    this.classes = {
+      backgroundColor: {
+        opaque: 'bg-' + page
+      }
+    }
+  }
+}
+
+let watchout = new Channel('watchout', '沃草', 'https://watchout.tw/')
+let antiNuclear = new Page('watchout', '反核專題', '/projects/anti-nuclear', 'anti-nuclear')
+watchout.pages.push(antiNuclear)
 
 export default {
   core: new Channel('core', '運算核心', 'https://core.watchout.tw/'),
@@ -32,5 +49,5 @@ export default {
   c0ngress: new Channel('c0ngress', '野生國會', 'https://c0ngress.watchout.tw/'),
   maa: new Channel('maa', '草漫', 'https://maa.watchout.tw/'),
   vendor: new Channel('vendor', '草地攤販', 'https://vendor.watchout.tw/'),
-  watchout: new Channel('watchout', '沃草', 'https://watchout.tw/')
+  watchout: watchout
 }

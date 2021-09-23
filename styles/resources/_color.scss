@@ -2,6 +2,7 @@
 
 // Original colors
 
+$color-anti-nuclear: #000000;
 $color-watchout: #50E3C2;
 $color-park: #FFB55D;
 $color-kangsim: $color-park;
@@ -16,6 +17,7 @@ $color-vendor: #F8E71C;
 // Same thing but in a map
 
 $watchout-colors: (
+  anti-nuclear: #000000,
   watchout: #50E3C2,
   park: #FFB55D,
   kangsim: $color-park,
