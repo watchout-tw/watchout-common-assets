@@ -43,6 +43,18 @@
       background-color: rgba($color, map-get($opacity-levels, light));
     }
   }
+  &.dark {
+    border: 1px solid;
+    border-color: black;
+    color: white;
+    background-color: black;
+  }
+  &.dark:hover {
+    border: 1px solid;
+    border-color: black;
+    color: black;
+    background-color: white;
+  }
   &.toggle {
     color: $color-inactive-grey;
     background-color: $color-very-very-light-grey;
