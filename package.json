@@ -1,16 +1,23 @@
 {
-  "name": "watchout-common-assets",
-  "version": "0.0.3",
+  "name": "@watchoutdev/common-assets",
+  "version": "1.0.0",
   "description": "Common assets across Watchout Commons",
-  "repository": "github:watchout-tw/watchout-common-assets",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/watchout-tw/watchout-common-assets.git"
+  },
   "main": "index.js",
   "author": "Department of Technology at Watchout <dev@watchout.tw>",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "dependencies": {
     "bootstrap": "4.3.1"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.1.2",
     "watchout-common-functions": "file:../watchout-common-functions"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/watchout-tw/watchout-common-assets/issues"
+  },
+  "homepage": "https://github.com/watchout-tw/watchout-common-assets#readme"
 }
