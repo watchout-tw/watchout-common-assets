@@ -6,11 +6,15 @@ const links = {
   home: rootURL,
   support: {
     general: rootURL + '#support',
-    watchout: {
-      custom: 'https://member.watchout.tw/',
+    ask: {
       direct: 'https://member.watchout.tw/'
     },
-    ask: {
+    musou: {
+      custom: 'https://member.watchout.tw/?utm_source=musou&utm_medium=website&utm_content=1229',
+      direct: 'https://member.watchout.tw'
+    },
+    watchout: {
+      custom: 'https://member.watchout.tw/?utm_source=main&utm_medium=website&utm_content=1229',
       direct: 'https://member.watchout.tw/'
     }
   },
