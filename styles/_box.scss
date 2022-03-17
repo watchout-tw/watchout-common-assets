@@ -16,6 +16,9 @@
     margin-right: $length;
     margin-left: $length;
   }
+  .margin-left-#{$unit} {
+    margin-left: $length;
+  }
   .padding-#{$unit} {
     padding: $length;
   }
@@ -31,6 +34,9 @@
   }
   .padding-right-left-#{$unit} {
     padding-right: $length;
+    padding-left: $length;
+  }
+  .padding-left-#{$unit} {
     padding-left: $length;
   }
 }
