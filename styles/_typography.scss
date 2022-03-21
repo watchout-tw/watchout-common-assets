@@ -229,6 +229,7 @@ h5 {
 $rt-margin: 1rem;
 $rt-container-sizes: (
   default: 49.5rem, // 36em at 22px
+  large: 41.25rem, // 30em at 22px
   medium: 35.75rem, // 26em at 22px
   small: 22rem // 16em at 22px
 );
@@ -374,4 +375,8 @@ ul.bulleted-list {
     margin-left: 0;
     margin-right: $unit-margin / 3 * -4;
   }
+}
+
+.font-weight-bold {
+  font-weight: bold;
 }
