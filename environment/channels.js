@@ -3,6 +3,7 @@ class Channel {
     let colorID = id === 'musou-media-experiment' ? 'musou' : id
     this.id = id
     this.name = name
+    // To be removed
     this.classes = {
       backgroundColor: {
         opaque: 'bg-' + colorID,

@@ -1,4 +1,5 @@
 export default {
+  // To be removed
   'anti-nuclear': {
     width: 272,
     height: 64
@@ -44,7 +45,7 @@ export default {
     height: 64
   },
   watchout: {
-    width: 272,
-    height: 64
+    width: 241,
+    height: 34
   }
 }
