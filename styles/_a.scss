@@ -70,3 +70,7 @@ a.a-inline-block {
     }
   }
 }
+a.button {
+  // For case: <a class="button">, Avoid using line-height from a, should be button stype
+  line-height: 1em;
+}
