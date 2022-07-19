@@ -24,6 +24,9 @@
     padding: 0.5rem;
     height: 2rem;
   }
+  &.light-hover:hover {
+    background-color: $color-very-very-light-grey;
+  }
   &.tiny {
     font-size: $font-size-tiny;
     padding: 0.5rem;
