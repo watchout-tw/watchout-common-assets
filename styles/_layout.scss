@@ -13,7 +13,7 @@
 
 $image-container-side-margin: 1rem;
 $image-container-sizes: (
-  default: 42rem,
+  default: 49rem,
   medium: 32rem
 );
 @each $name, $size in $image-container-sizes {
