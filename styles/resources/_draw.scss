@@ -286,18 +286,3 @@
     animation: cross-draw-2 $animation-duration;
   }
 }
-
-@mixin iconBlock () {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  width: 2rem;
-  height: 2rem;
-  cursor: pointer;
-  z-index: 1;
-  background-color: rgba(255, 255, 255, 0.7);
-  border-radius: 1rem;
-}
