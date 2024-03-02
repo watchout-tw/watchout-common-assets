@@ -45,6 +45,9 @@
     &.#{$channel}-light {
       background-color: rgba($color, map-get($opacity-levels, light));
     }
+    &.#{$channel}-hover:hover {
+      background-color: rgba($color, map-get($opacity-levels, light));
+    }
   }
   &.dark {
     border: 1px solid;
