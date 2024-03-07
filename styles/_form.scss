@@ -375,3 +375,38 @@ input[type='checkbox'] {
     }
   }
 }
+
+.action {
+  padding: 10px 40px;
+  height: auto;
+  font-size: 26px;
+  font-weight: bold;
+  box-shadow: none;
+  box-sizing: content-box;
+
+  &.light {
+    background: #ffffff;
+    border: 3px solid #000000;
+  }
+
+  &.dark {
+    background: #212121;
+    color: white;
+    border: 3px solid #ffffff;
+
+    &:hover {
+      color: black;
+    }
+  }
+
+  &:hover {
+    background: rgb(69, 224, 181) !important;
+    border: 3px solid rgb(69, 224, 181) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .action {
+    font-size: 25px;
+  }
+}
