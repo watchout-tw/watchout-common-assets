@@ -283,11 +283,17 @@ $rt-container-sizes: (
     color: $color;
   }
 }
+.text-color-doc-title-black {
+  color: $color-footer-black;
+}
 .text-color-nice-grey {
   color: $color-nice-grey;
 }
 .text-color-inactive-grey {
-  color: $color-inactive-grey
+  color: $color-inactive-grey;
+}
+.text-color-generic-grey {
+  color: $color-generic-grey;
 }
 .text-color-white {
   color: $color-push-button-text-white;
