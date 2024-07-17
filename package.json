@@ -8,8 +8,5 @@
   "license": "MIT",
   "dependencies": {
     "bootstrap": "4.3.1"
-  },
-  "devDependencies": {
-    "@nuxtjs/eslint-config": "12.1.0"
   }
 }
