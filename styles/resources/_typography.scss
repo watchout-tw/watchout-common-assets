@@ -1,30 +1,11 @@
-$rem: 16px;
-$font-size-double: 2rem;
-$font-size-one-half: 1.5rem;
-$font-size-default: 1rem;
-$font-size-small: 0.875rem;
-$font-size-tiny: 0.75rem;
-$font-size-nano: 0.625rem;
-$sans-serif-fonts: 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Helvetica Neue', 'Helvetica', 'Arial';
-$font-sans-serif: $sans-serif-fonts, sans-serif;
-$font-serif: $sans-serif-fonts, serif;
-$font-monospace: 'SF Mono', 'Menlo', monospace;
+@use '../variables';
 
 @mixin font-monospace {
-  font-family: $font-monospace;
+  font-family: variables.$font-monospace;
 }
 @mixin font-serif {
-  font-family: $font-serif;
+  font-family: variables.$font-serif;
 }
-
-// Line height
-
-$line-height-single: 1;
-$line-height-tight: 1.25;
-$line-height-compact: 1.35;
-$line-height-default: 1.5;
-$line-height-comfortable: 1.625;
-$line-height-relaxed: 1.75;
 
 // Styling
 
@@ -38,13 +19,3 @@ $line-height-relaxed: 1.75;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-// typesetting
-
-$braceL: '【';
-$braceR: '】';
-
-// variable font size
-$font-size-variable-large: 1.375rem;
-$font-size-variable-medium: 1.25rem;
-$font-size-variable-default: 1.125rem;

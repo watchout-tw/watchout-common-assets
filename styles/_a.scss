@@ -1,45 +1,48 @@
+@use './variables';
+@use './resources/typography';
+
 a, a:hover, a:focus, a:active, a:visited {
   color: inherit;
   text-decoration: none;
   cursor: pointer;
-  line-height: $line-height-tight; // TODO: is this ok?
+  line-height: variables.$line-height-tight; // TODO: is this ok?
   &.secondary-text {
-    color: $color-secondary-text-grey;
+    color: variables.$color-secondary-text-grey;
   }
   &.text-color-watchout {
-    color: $color-watchout;
+    color: variables.$color-watchout;
   }
   &.text-color-musou {
-    color: $color-musou;
+    color: variables.$color-musou;
   }
 }
 a.a-text,
 .a-text-parent a {
   display: inline;
   & {
-    @include underline($color-watchout, 0.65);
+    @include typography.underline(variables.$color-watchout, 0.65);
     &.text-color-musou {
-      @include underline($color-musou, 0.65);
+      @include typography.underline(variables.$color-musou, 0.65);
     }
   }
 
   &:hover, &:focus, &:active {
-    @include underline($color-watchout, 1.0);
+    @include typography.underline(variables.$color-watchout, 1.0);
     &.text-color-musou {
-      @include underline($color-musou, 1.0);
+      @include typography.underline(variables.$color-musou, 1.0);
     }
   }
 
   &.monochrome {
-    @include underline(black, 0.35);
+    @include typography.underline(black, 0.35);
     &:hover, &:focus, &:active {
-      @include underline(black, 1.0);
+      @include typography.underline(black, 1.0);
     }
   }
 }
 a.a-block {
   display: block;
-  line-height: $line-height-default; // TODO: is this ok?
+  line-height: variables.$line-height-default; // TODO: is this ok?
 }
 a.inline-block {
   display: inline-block;
@@ -50,22 +53,22 @@ a.a-inline-block {
     & {
       .a-target {
         display: inline;
-        @include underline($color-watchout, 0.65);
+        @include typography.underline(variables.$color-watchout, 0.65);
       }
     }
     &:hover, &:focus, &:active {
       .a-target {
-        @include underline($color-watchout, 1.0);
+        @include typography.underline(variables.$color-watchout, 1.0);
       }
     }
     &.monochrome {
       .a-target {
-        @include underline(black, 0.35);
+        @include typography.underline(black, 0.35);
       }
     }
     &.monochrome:hover, &.monochrome:focus, &.monochrome:active {
       .a-target {
-        @include underline(black, 1.0);
+        @include typography.underline(black, 1.0);
       }
     }
   }
