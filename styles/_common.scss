@@ -1,28 +1,35 @@
-// Bootstrap partial import
-@import '~bootstrap/scss/utilities/display';
-@import '~bootstrap/scss/utilities/flex';
-@import '~bootstrap/scss/reboot';
-
 // General override
-@import './override';
+@forward './override';
 
 // Typography
-@import './typography';
-@import './a';
+@forward './typography';
+@forward './a';
 
 // Color
-@import './color';
+@forward './color';
 
 // Box
-@import './box';
+@forward './box';
 
 // Layout
-@import './layout';
-@import './tcl';
+@forward './layout';
+@forward './tcl';
 
 // Form
-@import './form';
+@forward './form';
 
 // Modules
-@import './draw';
-@import './interaction';
+@forward './draw';
+@forward './interaction';
+
+
+// Bootstrap partial import
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/variables-dark';
+@import 'bootstrap/scss/maps';
+@import 'bootstrap/scss/mixins';
+@import 'bootstrap/scss/root';
+@import 'bootstrap/scss/utilities';
+@import 'bootstrap/scss/reboot';
+@import 'bootstrap/scss/utilities/api';

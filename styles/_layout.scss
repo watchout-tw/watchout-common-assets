@@ -1,8 +1,11 @@
+@use './resources/layout';
+@use './variables';
+
 .center-self {
-  @include center-self;
+  @include layout.center-self;
 }
 .center-self-wide {
-  @include center-self(64rem);
+  @include layout.center-self(64rem);
 }
 .center-child {
   display: flex;
@@ -37,11 +40,12 @@ $image-container-sizes: (
       display: block;
       max-width: $size;
       margin: 0.5rem $image-container-side-margin;
+      color: variables.$color-secondary-text-grey;
+
       @media (min-width: #{$size + $image-container-side-margin * 2}) {
         margin-left: auto;
         margin-right: auto;
       }
-      color: $color-secondary-text-grey;
     }
   }
 }
@@ -58,13 +62,13 @@ $image-container-sizes: (
   }
   &.document {
     > img, > .image {
-      border: 1px $color-very-light-grey solid;
+      border: 1px variables.$color-very-light-grey solid;
       border-radius: 1px;
     }
   }
   &.manga {
     > img, > .image {
-      border: 2px $color-nice-grey solid;
+      border: 2px variables.$color-nice-grey solid;
       border-radius: 1px;
     }
   }
