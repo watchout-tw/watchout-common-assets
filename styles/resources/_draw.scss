@@ -274,8 +274,8 @@
     width: $stroke-width;
     height: $size;
     position: absolute;
-    top: calc( -$box-size / 4 );
-    left: calc( -$box-size / 4 );
+    top: calc( ($box-size * -1) / 4 );
+    left: calc( ($box-size * -1) / 4 );
   }
   &:before {
     transform-origin: 0 0;
