@@ -1,3 +1,6 @@
+@use './variables';
+@use './resources/media_query';
+
 .tcl-container {
   display: flex;
   flex-direction: row;
@@ -5,19 +8,19 @@
   align-items: flex-start;
   justify-content: center;
   width: 100%;
-  max-width: $tcl-bp-sm;
+  max-width: variables.$tcl-bp-sm;
   margin-left: auto;
   margin-right: auto;
 
   > .tcl-panel {
     position: relative;
     width: 100%;
-    flex-basis: $tcl-bp-sm;
-    @if $tcl-dev-mode == true {
-      border: 1px $color-very-light-grey solid;
+    flex-basis: variables.$tcl-bp-sm;
+    @if variables.$tcl-dev-mode == true {
+      border: 1px variables.$color-very-light-grey solid;
     }
     &.half-width {
-      $panel-width: calc((100% - #{$tcl-gap * 3}) / 2);
+      $panel-width: calc((100% - #{variables.$tcl-gap * 3}) / 2);
       flex-basis: $panel-width;
       &.strict {
         max-width: $panel-width;
@@ -79,9 +82,9 @@
       margin-top: 0.5rem;
       margin-bottom: 0.5rem;
       font-size: 1.25rem;
-      line-height: $line-height-default;
+      line-height: variables.$line-height-default;
       font-weight: bold;
-      color: $color-nice-grey;
+      color: variables.$color-nice-grey;
     }
     > .tcl-panel-content {
       &.with-padding {
@@ -94,10 +97,10 @@
   margin-left: 1rem;
   margin-right: 1rem;
 }
-@include tcl-sm {
+@include media_query.tcl-sm {
   .tcl-container {
     > .tcl-panel {
-      $panel-width: $tcl-panel-max-width;
+      $panel-width: variables.$tcl-panel-max-width;
       flex-basis: $panel-width;
       &.strict {
         max-width: $panel-width;
@@ -109,9 +112,9 @@
     margin-right: 0;
   }
 }
-@include tcl-md {
+@include media_query.tcl-md {
   .tcl-container {
-    max-width: $tcl-bp-lg;
+    max-width: variables.$tcl-bp-lg;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     &.no-margin {
@@ -119,7 +122,7 @@
       margin-bottom: 0;
     }
     > .tcl-panel {
-      $panel-width: calc((100% - #{$tcl-gap * 3}) / 2);
+      $panel-width: calc((100% - #{variables.$tcl-gap * 3}) / 2);
       flex-basis: $panel-width;
       &.strict {
         max-width: $panel-width;
@@ -138,21 +141,21 @@
         margin-right: 1rem;
       }
       &.half-width {
-        $panel-width: calc((100% - #{$tcl-gap * 5}) / 4);
+        $panel-width: calc((100% - #{variables.$tcl-gap * 5}) / 4);
         flex-basis: $panel-width;
         &.strict {
           max-width: $panel-width;
         }
       }
       &.three-quarters-width {
-        $panel-width: calc((100% - #{$tcl-gap * 5}) / 4 * 3 + #{$tcl-gap * 2});
+        $panel-width: calc((100% - #{variables.$tcl-gap * 5}) / 4 * 3 + #{variables.$tcl-gap * 2});
         flex-basis: $panel-width;
         &.strict {
           max-width: $panel-width;
         }
       }
       &.quarter-width {
-        $panel-width: calc((100% - #{$tcl-gap * 5}) / 4);
+        $panel-width: calc((100% - #{variables.$tcl-gap * 5}) / 4);
         flex-basis: $panel-width;
         &.strict {
           max-width: $panel-width;
@@ -161,7 +164,7 @@
     }
   }
 }
-@include tcl-lg {
+@include media_query.tcl-lg {
   .tcl-container {
     > .tcl-panel {
       // TODO: fine-tune panel width

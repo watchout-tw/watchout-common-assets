@@ -1,91 +1,74 @@
-// TCL: Two-column Layout System
-
-$tcl-dev-mode: false;
-
-$tcl-gap: 16px;
-$tcl-panel-max-width: 464px;
-$tcl-bp-sm: $tcl-panel-max-width + 2 * $tcl-gap; // 496px
-$tcl-bp-md: 688px;
-$tcl-bp-lg: 992px;
-$tcl-panel-full-width: $tcl-bp-lg - 2 * $tcl-gap; // 960px
+@use '../variables';
 
 @mixin tcl-sm {
-  @media (min-width: #{$tcl-bp-sm}) {
+  @media (min-width: #{variables.$tcl-bp-sm}) {
     @content;
   }
 }
 @mixin tcl-md {
-  @media (min-width: #{$tcl-bp-md}) {
+  @media (min-width: #{variables.$tcl-bp-md}) {
     @content;
   }
 }
 @mixin tcl-lg {
-  @media (min-width: #{$tcl-bp-lg}) {
+  @media (min-width: #{variables.$tcl-bp-lg}) {
     @content;
   }
 }
 
-$bp-xs: 320px;
-$bp-sm: 576px;
-$bp-sm-content-max-width: $bp-sm - 2 * $rem;
-$bp-md: 768px;
-$bp-lg-alt: 960px;
-$bp-lg: 992px;
-$bp-xl: 1200px;
-
 // Less than OR equal to width
 @mixin bp-xs-down {
-  @media (max-width: #{$bp-xs}) {
+  @media (max-width: #{variables.$bp-xs}) {
     @content;
   }
 }
 @mixin bp-sm-down {
-  @media (max-width: #{$bp-sm}) {
+  @media (max-width: #{variables.$bp-sm}) {
     @content;
   }
 }
 @mixin bp-md-down {
-  @media (max-width: #{$bp-md}) {
+  @media (max-width: #{variables.$bp-md}) {
     @content;
   }
 }
 @mixin bp-lg-alt-down {
-  @media (max-width: #{$bp-lg-alt}) {
+  @media (max-width: #{variables.$bp-lg-alt}) {
     @content;
   }
 }
 
 // More than OR equal to width
 @mixin bp-sm-up {
-  @media (min-width: #{$bp-sm}) {
+  @media (min-width: #{variables.$bp-sm}) {
     @content;
   }
 }
 @mixin bp-md-up {
-  @media (min-width: #{$bp-md}) {
+  @media (min-width: #{variables.$bp-md}) {
     @content;
   }
 }
 
 @mixin bp-lg-alt-up {
-  @media (min-width: #{$bp-lg-alt}) {
+  @media (min-width: #{variables.$bp-lg-alt}) {
     @content;
   }
 }
 @mixin bp-lg-up {
-  @media (min-width: #{$bp-lg}) {
+  @media (min-width: #{variables.$bp-lg}) {
     @content;
   }
 }
 
 // Vertical breakpoints
 @mixin vbp-sm-up {
-  @media (min-height: #{$bp-sm}) {
+  @media (min-height: #{variables.$bp-sm}) {
     @content;
   }
 }
 @mixin vbp-md-up {
-  @media (min-height: #{$bp-md}) {
+  @media (min-height: #{variables.$bp-md}) {
     @content;
   }
 }

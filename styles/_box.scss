@@ -1,4 +1,6 @@
-@each $unit, $length in $unit-lengths {
+@use './variables';
+
+@each $unit, $length in variables.$unit-lengths {
   .margin-#{$unit} {
     margin: $length;
   }

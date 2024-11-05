@@ -1,11 +1,15 @@
+@use './variables';
+@use './resources/typography';
+@use './resources/media_query';
+
 h1, h2, h3, h4, h5 {
-  line-height: $line-height-compact;
+  line-height: variables.$line-height-compact;
   font-weight: bold;
   padding: 0;
   margin: 0;
   &.font-serif {
-    @include font-serif;
-    @include font-smoothing;
+    @include typography.font-serif;
+    @include typography.font-smoothing;
   }
   &.font-weight-medium {
     font-weight: 500;
@@ -21,7 +25,7 @@ h1 {
   }
   &.medium {
     font-size: 1.75em;
-    @include bp-sm-up {
+    @include media_query.bp-sm-up {
       font-size: 1.875em;
     }
   }
@@ -33,7 +37,7 @@ h2 {
   font-size: 1.5em;
   &.small {
     font-size: 1em;
-    line-height: $line-height-default;
+    line-height: variables.$line-height-default;
   }
   &.medium {
     font-size: 1.25em;
@@ -46,7 +50,7 @@ h3 {
   font-size: 1.25em;
   &.small {
     font-size: 1em;
-    line-height: $line-height-default;
+    line-height: variables.$line-height-default;
   }
   &.medium {
     font-size: 1.125em;
@@ -60,7 +64,7 @@ h3 {
 }
 h4 {
   font-size: 1em;
-  line-height: $line-height-default;
+  line-height: variables.$line-height-default;
   &.small {
     font-size: 0.875em;
   }
@@ -69,12 +73,12 @@ h4 {
   }
   &.large {
     font-size: 1.125em;
-    line-height: $line-height-compact;
+    line-height: variables.$line-height-compact;
   }
 }
 h5 {
   font-size: 0.875em;
-  line-height: $line-height-default;
+  line-height: variables.$line-height-default;
 }
 
 .paragraphs {
@@ -107,7 +111,7 @@ h5 {
   }
   &.default-width {
     width: 18rem;
-    @include bp-md-up {
+    @include media_query.bp-md-up {
       width: 24rem;
     }
   }
@@ -203,8 +207,8 @@ h5 {
   }
   > blockquote {
     font-size: 1.5em;
-    color: $color-secondary-text-grey;
-    border-left: 0.25em $color-light-border-grey solid;
+    color: variables.$color-secondary-text-grey;
+    border-left: 0.25em variables.$color-light-border-grey solid;
     padding: 0.5em 0.75em;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
@@ -247,69 +251,69 @@ $rt-container-sizes: (
 }
 
 .variable-font-size {
-  font-size: $font-size-variable-default;
+  font-size: variables.$font-size-variable-default;
   line-height: 1.625;
   @media (min-width: 28rem) {
-    font-size: $font-size-variable-medium;
+    font-size: variables.$font-size-variable-medium;
   }
   @media (min-width: 40rem) {
-    font-size: $font-size-variable-large;
+    font-size: variables.$font-size-variable-large;
   }
 }
 
 // Font size
 .font-size-variable-large {
-  font-size: $font-size-variable-large;
+  font-size: variables.$font-size-variable-large;
 }
 .font-size-variable-medium {
-  font-size: $font-size-variable-medium;
+  font-size: variables.$font-size-variable-medium;
 }
 .font-size-default {
   font-size: 1rem;
 }
 .font-size-small {
-  font-size: $font-size-small;
+  font-size: variables.$font-size-small;
 }
 .font-size-tiny {
-  font-size: $font-size-tiny;
+  font-size: variables.$font-size-tiny;
 }
 .font-size-nano {
-  font-size: $font-size-nano;
+  font-size: variables.$font-size-nano;
 }
 
 // Text color
-@each $channel, $color in $watchout-colors {
+@each $channel, $color in variables.$watchout-colors {
   .text-color-#{$channel} {
     color: $color;
   }
 }
 .text-color-doc-title-black {
-  color: $color-footer-black;
+  color: variables.$color-footer-black;
 }
 .text-color-nice-grey {
-  color: $color-nice-grey;
+  color: variables.$color-nice-grey;
 }
 .text-color-inactive-grey {
-  color: $color-inactive-grey;
+  color: variables.$color-inactive-grey;
 }
 .text-color-generic-grey {
-  color: $color-generic-grey;
+  color: variables.$color-generic-grey;
 }
 .text-color-white {
-  color: $color-push-button-text-white;
+  color: variables.$color-push-button-text-white;
 }
 
 .line-height-single {
-  line-height: $line-height-single;
+  line-height: variables.$line-height-single;
 }
 .line-height-tight {
-  line-height: $line-height-tight;
+  line-height: variables.$line-height-tight;
 }
 .line-height-default {
-  line-height: $line-height-default;
+  line-height: variables.$line-height-default;
 }
 .line-height-relaxed {
-  line-height: $line-height-relaxed;
+  line-height: variables.$line-height-relaxed;
 }
 
 // Text align
@@ -322,14 +326,14 @@ $rt-container-sizes: (
 
 // Section title
 .section-title {
-  font-size: $font-size-default;
-  line-height: $line-height-tight;
+  font-size: variables.$font-size-default;
+  line-height: variables.$line-height-tight;
   font-weight: bold;
   &.with-increased-top-margin {
     margin-top: 1rem;
   }
   &.multi-line {
-    line-height: $line-height-default;
+    line-height: variables.$line-height-default;
   }
   &.with-underline {
     > span {
@@ -337,11 +341,11 @@ $rt-container-sizes: (
       border-bottom: 2px currentcolor solid;
     }
     &.small {
-      font-size: $font-size-small;
+      font-size: variables.$font-size-small;
       line-height: 1.125rem;
     }
     &.tiny {
-      font-size: $font-size-tiny;
+      font-size: variables.$font-size-tiny;
       line-height: 0.875rem;
     }
   }
@@ -355,11 +359,11 @@ ul.bulleted-list {
 .secondary-text,
 .default-value,
 .not-available {
-  color: $color-secondary-text-grey;
+  color: variables.$color-secondary-text-grey;
 }
 
 .highlighted {
-  background-color: rgba($color-vendor, 0.5);
+  background-color: rgba(variables.$color-vendor, 0.5);
   padding: 2px 0;
 }
 
@@ -370,16 +374,16 @@ ul.bulleted-list {
     margin-right: $unit-margin * -1;
   }
   &.thick-punct {
-    margin-left: $unit-margin / 3 * -2;
-    margin-right: $unit-margin / 3 * -2;
+    margin-left: calc($unit-margin / 3 * -2);
+    margin-right: calc($unit-margin / 3 * -2);
   }
   &.left-punct {
-    margin-left: $unit-margin / 3 * -4;
+    margin-left: calc($unit-margin / 3 * -4);
     margin-right: 0;
   }
   &.right-punct {
     margin-left: 0;
-    margin-right: $unit-margin / 3 * -4;
+    margin-right: calc($unit-margin / 3 * -4);
   }
 }
 
