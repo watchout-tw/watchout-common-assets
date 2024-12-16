@@ -187,7 +187,7 @@ $tcl-panel-full-width: $tcl-bp-lg - 2 * $tcl-gap; // 960px
 
 $bp-xs: 320px;
 $bp-sm: 576px;
-$bp-sm-content-max-width: calc($bp-sm - 2 * $rem);
+$bp-sm-content-max-width: $bp-sm - 2 * $rem;
 $bp-md: 768px;
 $bp-lg-alt: 960px;
 $bp-lg: 992px;
