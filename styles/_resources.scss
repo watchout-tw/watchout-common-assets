@@ -6,6 +6,9 @@
 @forward './resources/draw';
 @forward './resources/shadow';
 
+// Bootstrap
+// 順序網址在這 : https://getbootstrap.com/docs/5.3/customize/sass/
+
 @import 'bootstrap/scss/functions';
 @import 'bootstrap/scss/variables';
 @import 'bootstrap/scss/mixins';
