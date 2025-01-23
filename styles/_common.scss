@@ -1,29 +1,3 @@
-// General override
-@forward './override';
-
-// Typography
-@forward './typography';
-@forward './a';
-
-// Color
-@forward './color';
-
-// Box
-@forward './box';
-
-// Layout
-@forward './layout';
-@forward './tcl';
-
-// Form
-@forward './form';
-
-// Modules
-@forward './draw';
-@forward './interaction';
-
-// TODO :　檢查這些檔案新增這些　import　在其他地方使用　common　會使用錯東西
-
 // Bootstrap partial import
 @import 'bootstrap/scss/functions';
 @import 'bootstrap/scss/variables';
@@ -32,3 +6,27 @@
 @import 'bootstrap/scss/utilities';
 @import 'bootstrap/scss/reboot';
 @import 'bootstrap/scss/utilities/api';
+
+// General override
+@import './override';
+
+// Typography
+@import './typography';
+@import './a';
+
+// Color
+@import './color';
+
+// Box
+@import './box';
+
+// Layout
+@import './layout';
+@import './tcl';
+
+// Form
+@import './form';
+
+// Modules
+@import './draw';
+@import './interaction';
