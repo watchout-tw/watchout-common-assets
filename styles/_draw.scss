@@ -1,3 +1,5 @@
+@use './resources/draw';
+
 .close {
-  @include close;
+  @include draw.close;
 }

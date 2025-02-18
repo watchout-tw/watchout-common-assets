@@ -1,3 +1,5 @@
+@use '../variables';
+
 @mixin close() {
   float: none;
   display: block;
@@ -64,50 +66,50 @@
   }
 }
 
-@mixin triangleUp($size: 8px, $color: $color-nice-grey) {
+@mixin triangleUp($size: 8px, $color: variables.$color-nice-grey) {
   display: inline-block;
   width: 0;
   height: 0;
   border-left: $size solid transparent;
   border-right: $size solid transparent;
   border-bottom: $size solid $color;
-  border-top: ($size / 4) solid transparent;
+  border-top: #{$size / 4} solid transparent;
   transform: scaleX(0.66666667);
 }
 
-@mixin triangleDown($size: 8px, $color: $color-nice-grey) {
+@mixin triangleDown($size: 8px, $color: variables.$color-nice-grey) {
   display: inline-block;
   width: 0;
   height: 0;
   border-left: $size solid transparent;
   border-right: $size solid transparent;
   border-top: $size solid $color;
-  border-bottom: ($size / 4) solid transparent;
+  border-bottom: #{$size / 4} solid transparent;
   transform: scaleX(0.66666667);
 }
 
-@mixin triangleRight($size: 8px, $color: $color-nice-grey) {
+@mixin triangleRight($size: 8px, $color: variables.$color-nice-grey) {
   display: inline-block;
   width: 0;
   height: 0;
   border-top: $size solid transparent;
   border-bottom: $size solid transparent;
   border-left: $size solid $color;
-  border-right: ($size / 4) solid transparent;
+  border-right: #{$size / 4} solid transparent;
   transform: scaleY(0.66666667);
 }
 
-@mixin pause($size: 8px, $color: $color-nice-grey) {
+@mixin pause($size: 8px, $color: variables.$color-nice-grey) {
   &:before,
   &:after {
     content: '';
     display: inline-block;
-    width: $size/2;
+    width: #{$size / 2};
     height: $size * 1.25;
     background-color: $color;
   }
   &:before {
-    margin-right: $size/3;
+    margin-right: #{ $size / 3 };
   }
 }
 
@@ -121,7 +123,7 @@
   // bottom
   &:before {
     top: 100%;
-    left: $depth / 2;
+    left: #{ $depth / 2 };
     width: 100%;
     height: $depth;
     background: $color-bottom;
@@ -129,7 +131,7 @@
   }
   // side
   &:after {
-    top: $depth / 2;
+    top: #{ $depth / 2 };
     left: 100%;
     width: $depth;
     height: 100%;
@@ -141,11 +143,13 @@
     $remainder: 2px;
     &:active {
       &:before {
-        left: $remainder / 2;
+
+
+        left: #{$remainder / 2};
         height: $remainder;
       }
       &:after {
-        top: $remainder / 2;
+        top: #{$remainder / 2};
         width: $remainder;
       }
       transform: translate($depth - $remainder, $depth - $remainder);
@@ -178,8 +182,8 @@
     left: 50%;
     width: $size;
     height: $size;
-    margin-top: $size / -2;
-    margin-left: $size / -2;
+    margin-top: #{ $size / -2 };
+    margin-left: #{ $size / -2 };
     border-style: solid;
     border-radius: 50%;
     border-width: 0.25rem;
@@ -272,8 +276,8 @@
     width: $stroke-width;
     height: $size;
     position: absolute;
-    top: -$box-size / 4;
-    left: -$box-size / 4;
+    top: #{ ($box-size * -1) / 4 };
+    left: #{ ($box-size * -1) / 4 };
   }
   &:before {
     transform-origin: 0 0;
