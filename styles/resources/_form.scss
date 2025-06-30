@@ -23,7 +23,7 @@ $appearance-button-wrap-calc-value: variables.$line-height-compact - 1;
   &.wrap {
     white-space: normal;
     line-height: variables.$line-height-compact;
-    $top-bottom-padding: $button-padding-regular - calc( $appearance-button-wrap-calc-value / 2);
+    $top-bottom-padding: $button-padding-regular - ($appearance-button-wrap-calc-value / 2);
     padding-top: $top-bottom-padding;
     padding-bottom: $top-bottom-padding;
     height: auto;
