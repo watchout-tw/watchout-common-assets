@@ -1,18 +1,14 @@
-@import '~bootstrap/scss/functions';
-@import '~bootstrap/scss/variables';
-@import '~bootstrap/scss/mixins';
+@forward './variables';
+@forward './resources/typography';
+@forward './resources/media_query';
+@forward './resources/layout';
+@forward './resources/form';
+@forward './resources/draw';
+@forward './resources/shadow';
 
-@import './resources/color';
-@import './resources/typography';
+// Bootstrap
+// 順序網址在這 : https://getbootstrap.com/docs/5.3/customize/sass/
 
-@import './resources/box';
-
-@import './resources/z';
-@import './resources/media_query';
-@import './resources/layout';
-
-@import './resources/form';
-
-@import './resources/draw';
-
-@import './resources/shadow';
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';

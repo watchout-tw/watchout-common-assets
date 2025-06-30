@@ -1,9 +1,10 @@
+@use './variables';
 // Background color
 
 // Channel-specific background colors
 // Generate bg-* bg-*-almost-opaque bg-*-light
-@each $channel, $color in $watchout-colors {
-  @each $opacity-name, $opacity in $opacity-levels {
+@each $channel, $color in variables.$watchout-colors {
+  @each $opacity-name, $opacity in variables.$opacity-levels {
     .bg-#{$channel} {
       background-color: $color;
     }
@@ -14,13 +15,13 @@
 }
 
 .bg-ask-gradient-to-transparent {
-  background: linear-gradient(to bottom, rgba($color-ask, 0.25), rgba($color-ask, 0));
+  background: linear-gradient(to bottom, rgba(variables.$color-ask, 0.25), rgba(variables.$color-ask, 0));
 }
 
 // Other background colors
 .bg-very-light-grey {
-  background-color: $color-very-light-grey;
+  background-color: variables.$color-very-light-grey;
 }
 .bg-very-very-light-grey {
-  background-color: $color-very-very-light-grey;
+  background-color: variables.$color-very-very-light-grey;
 }

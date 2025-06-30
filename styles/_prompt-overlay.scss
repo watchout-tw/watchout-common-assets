@@ -1,3 +1,5 @@
+@use './variables';
+
 .prompt-overlay {
   position: fixed;
   top: 0;
@@ -7,22 +9,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: $color-modal-overlay-white;
-  z-index: $z-modal;
+  background: variables.$color-modal-overlay-white;
+  z-index: variables.$z-modal;
   overflow: scroll;
 
   > .prompt {
     max-width: 30rem;
     padding: 2rem;
-    background-color: $color-very-light-grey;
+    background-color: variables.$color-very-light-grey;
     &.correct {
-      background-color: $color-correct;
+      background-color: variables.$color-correct;
     }
     &.incorrect {
-      background-color: $color-incorrect;
+      background-color: variables.$color-incorrect;
     }
     &.warning {
-      background-color: $color-warning;
+      background-color: variables.$color-warning;
     }
     &.with-dismiss {
       padding-bottom: 0;
@@ -46,7 +48,7 @@
     background: rgba(#333, 0.94);
     > .prompt {
       &.warning {
-        background-color: $color-warning-dark;
+        background-color: variables.$color-warning-dark;
       }
     }
   }
