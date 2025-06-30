@@ -1,14 +1,19 @@
+@use '../variables';
+@use './shadow';
+
 $button-padding-regular: 0.75rem;
+$appearance-button-wrap-calc-value: variables.$line-height-compact - 1;
+
 @mixin appearance-button() {
   position: relative;
   appearance: none;
   border: none;
   padding: $button-padding-regular;
-  @include shadow;
-  background-color: $color-very-light-grey;
+  @include shadow.shadow;
+  background-color: variables.$color-very-light-grey;
   font-size: 1rem;
   line-height: 1;
-  color: $color-font-color-default-black;
+  color: variables.$color-font-color-default-black;
   height: 2.5rem;
   white-space: nowrap;
 
@@ -17,8 +22,8 @@ $button-padding-regular: 0.75rem;
   }
   &.wrap {
     white-space: normal;
-    line-height: $line-height-compact;
-    $top-bottom-padding: $button-padding-regular - ($line-height-compact - 1) / 2;
+    line-height: variables.$line-height-compact;
+    $top-bottom-padding: $button-padding-regular - calc( $appearance-button-wrap-calc-value / 2);
     padding-top: $top-bottom-padding;
     padding-bottom: $top-bottom-padding;
     height: auto;
@@ -32,7 +37,7 @@ $button-padding-regular: 0.75rem;
   position: relative;
   width: 100%;
   margin: 0.25rem 0;
-  @each $unit, $length in $unit-lengths {
+  @each $unit, $length in variables.$unit-lengths {
     &.margin-top-#{$unit} {
       margin-top: $length;
     }
