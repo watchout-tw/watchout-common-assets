@@ -408,6 +408,9 @@ input[type='checkbox'] {
       padding: 5px 20px;
       font-size: 20px;
       border: 2px solid #000000;
+      &:hover {
+        border: 2px solid rgb(69, 224, 181) !important;
+      }
     }
 
     &:hover {

@@ -374,16 +374,16 @@ ul.bulleted-list {
     margin-right: $unit-margin * -1;
   }
   &.thick-punct {
-    margin-left: calc($unit-margin / 3 * -2);
-    margin-right: calc($unit-margin / 3 * -2);
+    margin-left: $unit-margin / 3 * -2;
+    margin-right: $unit-margin / 3 * -2;
   }
   &.left-punct {
-    margin-left: calc($unit-margin / 3 * -4);
+    margin-left: $unit-margin / 3 * -4;
     margin-right: 0;
   }
   &.right-punct {
     margin-left: 0;
-    margin-right: calc($unit-margin / 3 * -4);
+    margin-right: $unit-margin / 3 * -4;
   }
 }
 
