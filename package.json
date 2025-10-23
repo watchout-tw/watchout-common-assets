@@ -10,10 +10,6 @@
     "styles",
     "images"
   ],
-  "exports": {
-    "./styles/*": "./styles/*",
-    "./images/*": "./images/*"
-  },
   "dependencies": {
     "bootstrap": "5.3.3"
   }
