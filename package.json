@@ -1,6 +1,7 @@
 {
   "name": "watchout-common-assets",
   "version": "0.0.3",
+  "type": "module",
   "description": "Common assets across Watchout Commons",
   "repository": "github:watchout-tw/watchout-common-assets",
   "author": "Department of Technology at Watchout <dev@watchout.tw>",
